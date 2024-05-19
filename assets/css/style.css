@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
 }
@@ -6,8 +8,12 @@ body {
     background-color: rgb(252, 243, 211)
 }
 
+main {
+    text-align: center;
+}
 
-/* Nav-bar */
+
+/* Navbar */
 
 li {
     padding: 10px;
@@ -27,4 +33,26 @@ nav {
 
 nav ul {
     text-align: center;
+}
+
+/* Home Page */
+
+#home-title,
+#welcome {
+    padding: 20px;
+}
+
+.home-content {
+    text-align: center;
+    margin: 50px;
+}
+
+.home-content p {
+    padding: 10px;
+}
+
+#home-image {
+    width: 20rem;
+    height: auto;
+
 }
