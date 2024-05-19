@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+/* Nav-bar */
+
+li {
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    text-align: center;
+}
