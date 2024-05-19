@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(252, 243, 211)
+}
+
+
 /* Nav-bar */
 
 li {
