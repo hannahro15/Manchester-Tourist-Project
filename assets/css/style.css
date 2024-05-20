@@ -54,5 +54,32 @@ nav ul {
 #home-image {
     width: 20rem;
     height: auto;
+}
 
+/* Attractions Page */
+
+#attractions-title {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.attractions-type-div {
+    margin: 50px;
+}
+
+.attractions-type-div div {
+    text-align: center;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+#shopping-div,
+#music-div,
+#theatre-div,
+#museums-galleries-div,
+#fun-things-div,
+#sport-div,
+#parks-div,
+#buildings-div {
+    background-color: white;
 }
