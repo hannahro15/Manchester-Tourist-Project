@@ -104,14 +104,7 @@ nav ul {
     padding-top: 20px;
 }
 
-.hotels-transport-div {
-    margin: 50px;
-}
-
-.hotels-transport-div div {
-    padding: 10px;
-}
-
-.hotels-transport-div h3 {
-    padding-top: 20px;
+#hotels-div,
+#transport-div {
+    padding: 20px;
 }
