@@ -80,13 +80,34 @@ nav ul {
 
 /* Food, hotels and transport page */
 
+.restaurant-type-div {
+    margin: 50px;
+}
+
 .restaurant-type-div div {
     background-color: white;
     border: solid 1px black;
+    padding: 10px;
 }
 
 #hotels-div,
 #transport-div {
     background-color: white;
     border: solid 1px black;
+}
+
+.restaurant-type-div h3 {
+    padding-top: 20px;
+}
+
+.hotels-transport-div {
+    margin: 50px;
+}
+
+.hotels-transport-div div {
+    padding: 10px;
+}
+
+.hotels-transport-div h3 {
+    padding-top: 20px;
 }
