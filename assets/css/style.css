@@ -78,10 +78,6 @@ nav ul {
     padding-top: 20px;
 }
 
-.hidden {
-    display: none;
-}
-
 /* Food, hotels and transport page */
 
 .restaurant-type-div {
@@ -108,4 +104,10 @@ nav ul {
 #transport-div {
     padding: 20px;
     margin: 50px;
+}
+
+/*  Hide and show functionality */
+
+.hidden {
+    display: none;
 }
