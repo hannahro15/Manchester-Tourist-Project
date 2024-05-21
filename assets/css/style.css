@@ -83,3 +83,16 @@ nav ul {
 #buildings-div {
     background-color: white;
 }
+
+/* Food, hotels and transport page */
+
+.restaurant-type-div div {
+    background-color: white;
+    border: solid 1px black;
+}
+
+#hotels-div,
+#transport-div {
+    background-color: white;
+    border: solid 1px black;
+}
