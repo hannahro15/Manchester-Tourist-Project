@@ -69,19 +69,13 @@ nav ul {
 
 .attractions-type-div div {
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     border: solid 1px black;
+    background-color: white;
 }
 
-#shopping-div,
-#music-div,
-#theatre-div,
-#museums-galleries-div,
-#fun-things-div,
-#sport-div,
-#parks-div,
-#buildings-div {
-    background-color: white;
+.attractions-type-div h3 {
+    padding-top: 20px;
 }
 
 /* Food, hotels and transport page */
