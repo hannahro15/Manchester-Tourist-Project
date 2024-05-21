@@ -72,11 +72,14 @@ nav ul {
     padding: 10px;
     border: solid 1px black;
     background-color: white;
-    display: none;
 }
 
 .attractions-type-div h3 {
     padding-top: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Food, hotels and transport page */
