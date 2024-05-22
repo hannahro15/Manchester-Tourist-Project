@@ -12,7 +12,7 @@ for (let i = 0; i < attractionsButtons.length; i++) {
     })
 }
 
-// Add in dropdown (hide and show functionality) for buttons for the food and drinks sections on the food, hotels and tranaport page //
+// Add in dropdown (hide and show functionality) for buttons for the food and drinks sections on the food, hotels and transport page //
 let foodDrinksButtons = document.getElementsByClassName("food-drinks-button")
 let foodDrinksDivs = document.getElementsByClassName("food-drinks-container")
 
@@ -26,7 +26,7 @@ for (let i = 0; i < foodDrinksButtons.length; i++) {
     })
 }
 
-// Add in dropdown (hide and show functionality) for buttons for hotels and transport sections on the food,hotels and transport page //
+// Add in dropdown (hide and show functionality) for buttons for hotels and transport sections on the food, hotels and transport page //
 let hotelsTransportButtons = document.getElementsByClassName("hotels-transport-button")
 let hotelsTransportDivs = document.getElementsByClassName("hotels-transport-container")
 
