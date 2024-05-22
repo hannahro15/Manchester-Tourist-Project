@@ -1,9 +1,5 @@
 /* General */
 
-* {
-    margin: 0;
-}
-
 body {
     background-color: rgb(252, 243, 211)
 }
@@ -114,6 +110,18 @@ nav ul {
 
 /* Contact Form */
 
-.contact-form {
+label,
+input {
     display: block;
+}
+
+input,
+textarea {
+    margin: 0 auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.form-field {
+    padding: 5px;
 }
