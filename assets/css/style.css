@@ -125,3 +125,26 @@ textarea {
 .form-field {
     padding: 5px;
 }
+
+
+/* Memory Game */
+
+#game-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card-item {
+    border: solid 1px black;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+img {
+    width: 60px;
+    height: auto;
+}
