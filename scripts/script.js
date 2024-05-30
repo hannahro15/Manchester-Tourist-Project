@@ -43,20 +43,32 @@ for (let i = 0; i < hotelsTransportButtons.length; i++) {
 // Memory Game
 
 // let gameContainer = document.getElementById('game-container')
-// let cardFront = document.getElementsByClassName('card-front')
-// let cardItem = document.getElementsByClassName('card-item')
+
+
 
 // Load game when entering page
 // function loadGame() {}
 
 // When clicking start, the game begins
-// function startGame() {}
+// function startGame() {
+// }
 
 // Shuffle cards before game starts
 // function shuffleCards() {}
 
 // When click on cards it shows the pictures after clicking and button
-// function flipCards() {}
+// Flip cards
+let cards = document.querySelectorAll(".card-item")
+let cardFront = document.querySelectorAll('.card-front')
+let cardBack = document.querySelectorAll('.card-back')
+
+document.querySelectorAll('.card-item').forEach(function (card) {
+    card.addEventListener("click", function () {
+        this.classList.toggle('flip-item')
+    })
+});
+
+
 
 // When clicking 2 consecutive cards in the right order, if matching it stays flipped over, if not it flips back.
 // function matchingCards() {}
