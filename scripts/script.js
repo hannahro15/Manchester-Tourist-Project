@@ -58,16 +58,15 @@ for (let i = 0; i < hotelsTransportButtons.length; i++) {
 
 // When click on cards it shows the pictures after clicking and button
 // Flip cards
-let cards = document.querySelectorAll(".card-item")
-let cardFront = document.querySelectorAll('.card-front')
-let cardBack = document.querySelectorAll('.card-back')
+const cards = document.querySelectorAll(".card-item")
+const cardFront = document.querySelectorAll('.card-front')
+const cardBack = document.querySelectorAll('.card-back')
 
-document.querySelectorAll('.card-item').forEach(function (card) {
-    card.addEventListener("click", function () {
-        this.classList.toggle('flip-item')
-    })
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle('flip-item');
+    });
 });
-
 
 
 // When clicking 2 consecutive cards in the right order, if matching it stays flipped over, if not it flips back.
