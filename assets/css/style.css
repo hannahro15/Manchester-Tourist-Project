@@ -148,7 +148,6 @@ textarea {
     margin-top: 10px;
     margin-left: 3px;
     margin-right: 3px;
-    perspective: 1000px;
 }
 
 .card-item {
@@ -163,6 +162,7 @@ img {
     width: 100%;
     height: auto;
     align-items: center;
+    margin-top: 10px;
 }
 
 .card-back,
@@ -190,4 +190,40 @@ img {
     border-radius: 5px;
     background-color: black;
     color: white;
+}
+
+/* footer */
+
+footer {
+    margin-bottom: 0;
+    height: 85px;
+    background-color: black;
+    color: white;
+}
+
+.social-container {
+    float: left;
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+i {
+    padding: 5px;
+    color: white;
+}
+
+#social-links a {
+    text-decoration: none;
+}
+
+#copyright-statement {
+    font-size: 10px;
+    color: white;
+    float: left;
 }
