@@ -27,7 +27,7 @@ main {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     display: block;
     text-transform: uppercase;
 }
@@ -51,28 +51,6 @@ main {
 .active {
     background-color: black;
     color: white;
-}
-
-/* Navbar */
-
-li {
-    padding: 10px;
-    display: inline-block;
-    margin: 0 auto;
-}
-
-li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-nav {
-    background-color: black;
-}
-
-nav ul {
-    text-align: center;
 }
 
 /* Home Page */
