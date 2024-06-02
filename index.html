@@ -14,15 +14,21 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="attractions.html">Attractions and things to do</a></li>
-            <li><a href="food-hotels-transport.html">Eating out, Accommodation and Transport</a></li>
-            <li><a href="memory-game.html">Memory Game</a></li>
-            <li><a href="contact.html">Contact Form</a></li>
-        </ul>
-    </nav>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="attractions.html">Attractions and things to do</a>
+            <a href="food-hotels-transport.html">Eating out, Accomodation and Transport</a>
+            <a href="memory-game.html">The Manchester Memory Game</a>
+            <a href="contact.html">Contact Form</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <main>
         <div class="home-content">
