@@ -182,12 +182,10 @@ textarea {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 3px;
-    margin-right: 3px;
+    align-items: center;
 }
 
 .card-item {
-    margin: 2px;
     width: 80px;
     height: 80px;
     border-radius: 8px;
@@ -199,6 +197,7 @@ img {
     height: auto;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card-back,
