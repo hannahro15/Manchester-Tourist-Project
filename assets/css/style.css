@@ -75,7 +75,7 @@ main {
 
 .home-content {
     text-align: center;
-    margin: 50px;
+    margin: 20px;
 }
 
 .home-content p {
@@ -83,8 +83,9 @@ main {
 }
 
 #home-image {
-    width: 20rem;
+    width: 12rem;
     height: auto;
+    margin: 0 auto;
 }
 
 /* Attractions Page */
@@ -227,7 +228,7 @@ img {
     color: white;
 }
 
-/* footer */
+/* Footer */
 
 footer {
     margin-bottom: 0;

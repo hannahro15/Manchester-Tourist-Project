@@ -1,13 +1,17 @@
 // Hamburger Menu //
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+
+function hamburgerMenu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
         x.style.display = "block";
     }
-}
+};
+
+
+
 
 // Add in dropdown (hide and show functionality) for buttons on attractions page //
 let attractionsButtons = document.getElementsByClassName("attractions-button")
