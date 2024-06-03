@@ -31,7 +31,6 @@ main {
     font-size: 14px;
     display: block;
     text-transform: uppercase;
-    float: left;
 }
 
 /* Style the hamburger menu */
@@ -39,8 +38,10 @@ main {
     background: black;
     display: block;
     position: absolute;
-    right: 0;
+    padding: 12px;
+    margin: 0;
     top: 0;
+    right: 0;
 }
 
 /* Add a grey background color on mouse-over */
