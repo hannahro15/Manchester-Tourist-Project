@@ -16,7 +16,6 @@ main {
 .topnav {
     overflow: hidden;
     background-color: black;
-    position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
