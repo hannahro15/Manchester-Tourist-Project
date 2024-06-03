@@ -10,16 +10,6 @@ main {
     padding: 15px;
 }
 
-/* Logo */
-
-.logo {
-    width: 5rem;
-    height: auto;
-    margin: 0 auto;
-    float: left;
-    padding: 5px;
-}
-
 /* Hamburger Menu */
 
 /* Style the navigation menu */
@@ -230,17 +220,29 @@ img {
 /* Footer */
 
 footer {
-    margin-bottom: 0;
-    height: 85px;
+    margin: 0;
+    padding: 0;
+    height: 12rem;
     background-color: black;
     color: white;
+    display: block;
 }
 
+.logo {
+    width: 5rem;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+
 .social-container {
-    float: left;
     display: block;
     margin-left: 10px;
     margin-top: 5px;
+    text-align: center;
 }
 
 h3 {
@@ -260,5 +262,5 @@ i {
 #copyright-statement {
     font-size: 10px;
     color: white;
-    float: left;
+    float: middle;
 }
