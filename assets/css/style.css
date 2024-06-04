@@ -93,7 +93,7 @@ main {
 }
 
 .attractions-type-div {
-    margin: 50px;
+    margin: 30px;
 }
 
 .attractions-type-div div {
@@ -101,10 +101,17 @@ main {
     padding: 10px;
     border: solid 1px black;
     background-color: white;
+    margin: 30px;
 }
 
 .attractions-type-div h3 {
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+.attractions-button {
+    border-radius: 10px;
+    background-color: green;
+    color: white;
 }
 
 /* Food, hotels and transport page */
