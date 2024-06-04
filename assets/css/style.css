@@ -93,19 +93,23 @@ main {
 }
 
 .attractions-type-div {
-    margin: 30px;
+    margin: 20px;
 }
 
 .attractions-type-div div {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     border: solid 1px black;
     background-color: white;
-    margin: 30px;
+    margin: 10px;
 }
 
 .attractions-type-div h3 {
     padding-top: 10px;
+}
+
+.attractions-type-div p {
+    font-style: italic;
 }
 
 .attractions-button {
@@ -134,6 +138,10 @@ main {
 
 .restaurant-type-div h3 {
     padding-top: 20px;
+}
+
+.restaurant-type-div p {
+    font-style: italic;
 }
 
 #hotels-div,
