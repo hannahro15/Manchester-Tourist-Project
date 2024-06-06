@@ -23,36 +23,30 @@ const cardBack = document.querySelectorAll('.card-back')
 let cardOne = null;
 let cardTwo = null;
 
-// flipping function
-//cards.forEach(card => {
-//  card.addEventListener("click", () => {
-//     card.classList.toggle('flip-item');
-// });
-//});
 
 cards.forEach(card => {
-    card.addEventListener("click", (event) => {
+    card.addEventListener("click", () => {
         card.classList.add('flip-item')
 
         if (!cardOne) {
             cardOne = card;
         } else if (cardOne !== card) {
             cardTwo = card;
-
         }
-        if (cardOne === cardTwo) {
-            cardOne.classList.add('flip-item')
-            cardTwo.classList.add('flip-item')
+        if (cardOne.dataset.name === cardTwo.dataset.name) {
+            cardOne.removeEventListener('click')
+            cardTwo.removeEventListener('click')
         } else {
             setTimeout(() => {
                 cardOne.classList.remove('flip-item')
                 cardTwo.classList.remove('flip-item')
-                cardOne = null
-                cardTwo = null
-            }, 1000)
+            }, 1500);
         }
     })
 })
+
+
+
 
 
 
