@@ -36,8 +36,9 @@ cards.forEach(card => {
 
         if (!cardOne) {
             cardOne = card;
-        } else(cardOne !== card) {
+        } else if (cardOne !== card) {
             cardTwo = card;
+
         }
         if (cardOne === cardTwo) {
             cardOne.classList.add('flip-item')
@@ -49,10 +50,10 @@ cards.forEach(card => {
                 cardOne = null
                 cardTwo = null
             }, 1000)
-
         }
     })
 })
+
 
 
 // Timer in the game function
