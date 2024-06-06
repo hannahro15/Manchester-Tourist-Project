@@ -19,21 +19,39 @@
 </details>
 <details>
 <summary>Attractions and Things to Do Page - Mobile</summary>  
+<img src='assets/wireframes/attractions-page-mobile.png' alt='Attractions Page Mobile'>
 </details>
 <details>
-<summary>Attractions and Things to Do Page - Tablet</summary>   
+<summary>Attractions and Things to Do Page - Tablet</summary>  
+ <img src='assets/wireframes/attractions-page-tablet.png' alt='Attractions Page Tablet'>
 </details>
 <details>
-<summary>Attractions and Things to Do Page - Latop</summary>   
+<summary>Attractions and Things to Do Page - Laptop</summary>   
+<img src='assets/wireframes/attractions-page-laptop.png' alt='Attractions Page Laptop'>
 </details>
 <details>
-<summary> Food and Drink, Hotels and Transport Page - Mobile</summary>   
+<summary>Food and Drink, Hotels and Transport Page - Mobile</summary>  
+<img src='assets/wireframes/food-hotels-transport-page-mobile.png' alt='Food, Hotels, Transport Page Mobile'> 
 </details>
 <details>
-<summary> Food and Drink, Hotels and Transport Page - Tablet</summary>   
+<summary>Food and Drink, Hotels and Transport Page - Tablet</summary>   
+<img src='assets/wireframes/food-hotels-transport-page-tablet.png' alt='Food, Hotels, Transport Page Tablet'> 
 </details>
 <details>
-<summary> Food and Drink, Hotels and Transport Page - Laptop</summary>   
+<summary>Food and Drink, Hotels and Transport Page - Laptop</summary>   
+<img src='assets/wireframes/food-hotels-transport-page-laptop.png' alt='Food, Hotels, Transport Page Laptop'> 
+</details>
+<details>
+<summary>Memory Game Page - Mobile</summary>   
+<img src='assets/wireframes/memory-game-mobile.png' alt='Memory Game Mobile'>
+</details>
+<details>
+<summary>Memory Game Page - Tablet</summary>   
+<img src='assets/wireframes/memory-game-tablet.png' alt='Memory Game Tablet'>
+</details>
+<details>
+<summary>Memory Game Page - Laptop</summary>   
+<img src='assets/wireframes/memory-game-laptop.png' alt='Memory Game Laptop'>
 </details>
 <details>
 <summary>Contact Page - Mobile</summary>   
