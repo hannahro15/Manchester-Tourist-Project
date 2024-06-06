@@ -20,8 +20,8 @@
 const cards = document.querySelectorAll(".card-item")
 const cardFront = document.querySelectorAll('.card-front')
 const cardBack = document.querySelectorAll('.card-back')
-let cardOne;
-let cardTwo;
+let cardOne = null;
+let cardTwo = null;
 
 // flipping function
 //cards.forEach(card => {
@@ -34,24 +34,26 @@ cards.forEach(card => {
     card.addEventListener("click", (event) => {
         card.classList.add('flip-item')
 
-        if (cardOne) {
-            cardOne = event.currentTarget;
-        } else {
-            cardTwo = event.currentTarget;
+        if (!cardOne) {
+            cardOne = card;
+        } else(cardOne !== card) {
+            cardTwo = card;
         }
-        console.log(cardOne)
-        console.log(cardTwo)
-        if (cardOne.dataset.name === cardTwo.dataset.name) {
-            console.log(cardOne.dataset.name)
-            console.log(cardTwo.dataset.name)
+        if (cardOne === cardTwo) {
             cardOne.classList.add('flip-item')
             cardTwo.classList.add('flip-item')
         } else {
-            cardOne.classList.remove('flip-item')
-            cardTwo.classList.remove('flip-item')
+            setTimeout(() => {
+                cardOne.classList.remove('flip-item')
+                cardTwo.classList.remove('flip-item')
+                cardOne = null
+                cardTwo = null
+            }, 1000)
+
         }
     })
 })
+
 
 // Timer in the game function
 // function startGameTimer() {}
