@@ -187,8 +187,8 @@ textarea {
 
 /* Memory Game */
 
-#game-container {
-    display: grid;
+.game-container {
+    display: flex;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
