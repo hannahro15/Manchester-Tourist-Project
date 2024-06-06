@@ -116,8 +116,10 @@ main {
 
 /* Food, hotels and transport page */
 
-.restaurant-type-div {
-    margin: 50px;
+.food-drinks-container {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .restaurant-type-div div {
@@ -140,10 +142,10 @@ main {
     font-style: italic;
 }
 
-#hotels-div,
-#transport-div {
-    padding: 20px;
-    margin: 50px;
+.hotels-transport-container {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .food-drinks-button,
