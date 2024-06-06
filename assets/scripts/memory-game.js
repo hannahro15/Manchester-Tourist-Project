@@ -53,6 +53,7 @@ cards.forEach(card => {
     })
 })
 
+
 // Timer in the game function
 // function startGameTimer() {}
 
