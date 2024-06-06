@@ -80,8 +80,8 @@ main {
 
 /* Attractions Page */
 
-#attractions-container {
-    display: grid;
+.attractions-container {
+    display: flex;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -90,10 +90,6 @@ main {
 #attractions-title {
     margin: 10px;
     padding-top: 10px;
-}
-
-.attractions-type-div {
-    margin: 20px;
 }
 
 .attractions-type-div div {
