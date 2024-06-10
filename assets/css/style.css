@@ -10,108 +10,10 @@ main {
     padding: 15px;
 }
 
-/* Hamburger Menu */
+/* Navbar */
 
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: black;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-    text-transform: uppercase;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    padding: 12px;
-    margin: 0;
-    top: 0;
-    right: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-    background-color: darkgrey;
-    color: black;
-}
-
-/* Style the active link (or home/logo) */
 .active {
-    background-color: black;
-    color: white;
-}
-
-/* Home Page */
-
-#home-title,
-#welcome {
-    padding: 20px;
-}
-
-.home-content {
-    text-align: center;
-    margin: 20px;
-}
-
-.home-content p {
-    padding: 10px;
-}
-
-#home-image {
-    width: 12rem;
-    height: auto;
-    margin: 0 auto;
-}
-
-/* Attractions Page */
-
-.attractions-container {
-    display: flex;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-#attractions-title {
-    margin: 10px;
-    padding-top: 10px;
-}
-
-.attractions-type-div div {
-    text-align: center;
-    padding: 30px;
-    border: solid 1px black;
     background-color: white;
-    margin: 10px;
-}
-
-.attractions-type-div h3 {
-    padding-top: 10px;
-}
-
-.attractions-type-div p {
-    font-style: italic;
-}
-
-.attractions-button {
-    border-radius: 10px;
-    background-color: green;
-    color: white;
 }
 
 /* Food, hotels and transport page */
