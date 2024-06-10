@@ -45,6 +45,13 @@ cards.forEach(card => {
     })
 })
 
+function shuffle() {
+    card.forEach(card => {
+        let randomCardOrder = Math.floor(Math.random() * 24);
+        card.style.order = randomCardOrder;
+    })
+}
+
 
 
 
