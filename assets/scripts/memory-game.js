@@ -20,6 +20,8 @@
 const cards = document.querySelectorAll(".card-item")
 const cardFront = document.querySelectorAll('.card-front')
 const cardBack = document.querySelectorAll('.card-back')
+const startButton = document.getElementById('start-button')
+const resetButton = document.getElementById('reset-button')
 let cardOne = null;
 let cardTwo = null;
 
@@ -45,16 +47,21 @@ cards.forEach(card => {
     })
 })
 
-function shuffle() {
+function shuffleCards() {
     card.forEach(card => {
         let randomCardOrder = Math.floor(Math.random() * 24);
         card.style.order = randomCardOrder;
     })
 }
 
+function startGame() {
+    startButton.addEventListener('click', shuffleCards)
+}
 
-
-
+// Restart game or play again
+function resetGame() {
+    resetButton.addEventListener('click', shuffleCards)
+}
 
 
 // Timer in the game function
@@ -62,6 +69,3 @@ function shuffle() {
 
 // Ending game when timer is up
 // function endGame() {}
-
-// Restart game or play again
-// function restartGame() {}
