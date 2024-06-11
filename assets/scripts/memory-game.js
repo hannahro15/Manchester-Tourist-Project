@@ -1,33 +1,42 @@
 // Memory Game
 // Initialize classes annd ID's
 const cards = document.querySelectorAll(".card-item")
-let cardOne = document.querySelectorAll('.card-one');
-let cardTwo = document.querySelectorAll('.card-two');
+const cardOne = document.querySelectorAll('.card-one');
+const cardTwo = document.querySelectorAll('.card-two');
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
 
 // Function to Flip Card
-function flipCard() {
-    this.classList.add('flip-item');
-}
 cards.forEach(card => {
-    card.addEventListener("click", flipCard);
+    card.addEventListener("click", () => {
+        card.classList.add('flip-item');
+    })
+    card.addEventListener("click", () => {
+        const flipItems = document.querySelectorAll('.flip-item');
+        if (flipItems.length === 2) {
+            const firstCard = flipItems[0];
+            const secondCard = flipItems[1];
+            // Matched card
+            if (firstCard.dataset.name === secondCard.dataset.name) {
+                firstCard.classList.add('matched-cards');
+                secondCard.classList.add('matched-cards');
+            }
+            //Unflip no matching cards
+            setTimeout(() => {
+                flipItems.forEach(card => {
+                    card.classList.remove('flip-item');
+                });
+
+            }, 1000);
+
+
+        }
+    })
 });
 
-// Function to Match cards
-function matchCards(cardOne, cardTwo) {
-    if (cardOne.dataset.name === cardTwo.dataset.name) {
-        cardOne.removeEventListener('click', flipCard);
-        cardTwo.removeEventListener('click', flipCard);
-    } else {
-        setTimeout(() => {
-            cardOne.classList.remove('flip-item');
-            cardTwo.classList.remove('flip-item');
-        }, 1500);
-    }
-}
 
 // Shuffle Cards
+// Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
 function shuffleCards() {
     card.forEach(card => {
         let randomCardOrder = Math.floor(Math.random() * 24);

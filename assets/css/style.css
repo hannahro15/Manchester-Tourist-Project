@@ -129,9 +129,11 @@ img {
 }
 
 .card-front,
-.card-item.flip-item .inner-card {
+.card-item.flip-item .inner-card,
+.card-item.matched-cards .inner-card {
     transform: rotateY(180deg);
 }
+
 
 #start-button,
 #reset-button,
