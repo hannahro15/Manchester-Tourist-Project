@@ -1,52 +1,33 @@
 // Memory Game
-
-// let gameContainer = document.getElementById('game-container')
-
-
-
-// Load game when entering page
-// function loadGame() {}
-
-// When clicking start, the game begins
-// function startGame() {
-// }
-
-// Shuffle cards before game starts
-// function shuffleCards() {}
-
-// When click on cards it shows the pictures after clicking and button
-// Flip cards
-// When clicking 2 consecutive cards in the right order, if matching it stays flipped over, if not it flips back.
+// Initialize classes annd ID's
 const cards = document.querySelectorAll(".card-item")
-const cardFront = document.querySelectorAll('.card-front')
-const cardBack = document.querySelectorAll('.card-back')
+let cardOne = document.querySelectorAll('.card-one');
+let cardTwo = document.querySelectorAll('.card-two');
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
-let cardOne = null;
-let cardTwo = null;
 
-
+// Function to Flip Card
+function flipCard() {
+    this.classList.add('flip-item');
+}
 cards.forEach(card => {
-    card.addEventListener("click", () => {
-        card.classList.add('flip-item')
+    card.addEventListener("click", flipCard);
+});
 
-        if (!cardOne) {
-            cardOne = card;
-        } else if (cardOne !== card) {
-            cardTwo = card;
-        }
-        if (cardOne.dataset.name === cardTwo.dataset.name) {
-            cardOne.removeEventListener('click')
-            cardTwo.removeEventListener('click')
-        } else {
-            setTimeout(() => {
-                cardOne.classList.remove('flip-item')
-                cardTwo.classList.remove('flip-item')
-            }, 1500);
-        }
-    })
-})
+// Function to Match cards
+function matchCards(cardOne, cardTwo) {
+    if (cardOne.dataset.name === cardTwo.dataset.name) {
+        cardOne.removeEventListener('click', flipCard)
+        cardTwo.removeEventListener('click', flipCard)
+    } else {
+        setTimeout(() => {
+            cardOne.classList.remove('flip-item')
+            cardTwo.classList.remove('flip-item')
+        }, 1500);
+    }
+}
 
+// Shuffle Cards
 function shuffleCards() {
     card.forEach(card => {
         let randomCardOrder = Math.floor(Math.random() * 24);
@@ -54,11 +35,12 @@ function shuffleCards() {
     })
 }
 
+// Start Game
 function startGame() {
     startButton.addEventListener('click', shuffleCards)
 }
 
-// Restart game or play again
+// Restart/reset game and play again
 function resetGame() {
     resetButton.addEventListener('click', shuffleCards)
 }
