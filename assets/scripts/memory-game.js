@@ -17,12 +17,12 @@ cards.forEach(card => {
 // Function to Match cards
 function matchCards(cardOne, cardTwo) {
     if (cardOne.dataset.name === cardTwo.dataset.name) {
-        cardOne.removeEventListener('click', flipCard)
-        cardTwo.removeEventListener('click', flipCard)
+        cardOne.removeEventListener('click', flipCard);
+        cardTwo.removeEventListener('click', flipCard);
     } else {
         setTimeout(() => {
-            cardOne.classList.remove('flip-item')
-            cardTwo.classList.remove('flip-item')
+            cardOne.classList.remove('flip-item');
+            cardTwo.classList.remove('flip-item');
         }, 1500);
     }
 }
@@ -37,12 +37,12 @@ function shuffleCards() {
 
 // Start Game
 function startGame() {
-    startButton.addEventListener('click', shuffleCards)
+    startButton.addEventListener('click', shuffleCards);
 }
 
 // Restart/reset game and play again
 function resetGame() {
-    resetButton.addEventListener('click', shuffleCards)
+    resetButton.addEventListener('click', shuffleCards);
 }
 
 
