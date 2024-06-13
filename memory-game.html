@@ -50,7 +50,37 @@
         <p><em>This is a memory game based on icons that reflect Manchester!</em></p>
         <button id="start-button">Start Game</button>
         <button id="reset-button">Reset Game</button>
-        <button id="instructions">Instructions</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Instructions
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">How to Play</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        There are 12 pairs all together in the game. The aim of the game is to match pairs of the 12
+                        symbols
+                        relating to Manchester, by
+                        clicking on the cards. Click 'Start Game' to start playing the game. If a match is found
+                        the cards will
+                        stay flipped over when two consecutive cards are clicked, and when not a match if will flip back
+                        over almost immediately.
+                        Once all cards
+                        have been flipped over and matched, the
+                        game ends. You can click on the reset button to play the game again.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="game-container">
             <div class="row justify-content-center">
                 <div class="card-item col-4 col-md-3 col-lg-2" data-name="manc-city">
