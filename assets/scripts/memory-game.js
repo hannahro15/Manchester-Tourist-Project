@@ -1,8 +1,84 @@
 // Memory Game
+
+// Cards Array
+document.addEventListener('DOMContentLoaded', () => {
+    let cardsArr = [{
+        name: "manc-city",
+        img: "assets/images/manc-city.png"
+    }, {
+        name: "manc-united",
+        img: "assets/images/manc-united.png"
+    }, {
+        name: "tram",
+        img: "assets/images/tram.png"
+    }, {
+        name: "market-stall",
+        img: "assets/images/market-stall.png"
+    }, {
+        name: "rain",
+        img: "assets/images/rain.png"
+    }, {
+        name: "restaurant",
+        img: "assets/images/restaurant.png"
+    }, {
+        name: "violin",
+        img: "assets/images/violin.png"
+    }, {
+        name: "park",
+        img: "assets/images/park.png"
+    }, {
+        name: "bee",
+        img: "assets/images/bee.png"
+    }, {
+        name: "art-gallery",
+        img: "assets/images/art-gallery.png"
+    }, {
+        name: "theatre",
+        img: "assets/images/theatre.png"
+    }, {
+        name: "river",
+        img: "assets/images/river.png"
+    }, {
+        name: "manc-city",
+        img: "assets/images/manc-city.png"
+    }, {
+        name: "manc-united",
+        img: "assets/images/manc-united.png"
+    }, {
+        name: "tram",
+        img: "assets/images/tram.png"
+    }, {
+        name: "market-stall",
+        img: "assets/images/market-stall.png"
+    }, {
+        name: "rain",
+        img: "assets/images/rain.png"
+    }, {
+        name: "restaurant",
+        img: "assets/images/restaurant.png"
+    }, {
+        name: "violin",
+        img: "assets/images/violin.png"
+    }, {
+        name: "park",
+        img: "assets/images/park.png"
+    }, {
+        name: "bee",
+        img: "assets/images/bee.png"
+    }, {
+        name: "art-gallery",
+        img: "assets/images/art-gallery.png"
+    }, {
+        name: "theatre",
+        img: "assets/images/theatre.png"
+    }, {
+        name: "river",
+        img: "assets/images/river.png"
+    }]
+})
+
 // Initialize classes annd ID's
 const cards = document.querySelectorAll(".card-item")
-const cardOne = document.querySelectorAll('.card-one');
-const cardTwo = document.querySelectorAll('.card-two');
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
 
@@ -26,10 +102,7 @@ cards.forEach(card => {
                 flipItems.forEach(card => {
                     card.classList.remove('flip-item');
                 });
-
             }, 1000);
-
-
         }
     })
 });
@@ -46,12 +119,12 @@ function shuffleCards() {
 
 // Start Game
 function startGame() {
-    startButton.addEventListener('click', shuffleCards);
+    shuffleCards();
 }
 
 // Restart/reset game and play again
 function resetGame() {
-    resetButton.addEventListener('click', shuffleCards);
+    shuffleCards();
 }
 
 
