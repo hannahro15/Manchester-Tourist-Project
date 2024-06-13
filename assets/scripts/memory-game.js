@@ -43,18 +43,17 @@ cards.forEach(card => {
                 firstCard.classList.add('matched-cards');
                 secondCard.classList.add('matched-cards');
             }
-            //Unflip no matching cards
+            //Unflip not matching cards
             setTimeout(() => {
                 flipItems.forEach(card => {
                     card.classList.remove('flip-item');
                 });
-            }, 1000);
+            }, 500);
         }
     })
 });
 
-// Ending game when timer is up
-// function endGame() {}
+// Function to end game 
 
 // Timer in the game function
 // function startGameTimer() {}
