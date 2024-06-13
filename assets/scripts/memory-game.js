@@ -4,14 +4,35 @@
 const cards = document.querySelectorAll(".card-item")
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
+
 startButton.addEventListener("click", shuffleCards);
 resetButton.addEventListener("click", shuffleCards);
 
-// Function to Flip Card
+// Shuffle Cards
+// Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
+function shuffleCards() {
+    cards.forEach(card => {
+        let randomCardOrder = Math.floor(Math.random() * cards.length);
+        card.style.order = randomCardOrder;
+    })
+}
+
+// Start Game
+function startGame() {
+    shuffleCards();
+}
+
+// Restart/reset game and play again
+function resetGame() {
+    shuffleCards();
+}
+
+// Flip Card
 cards.forEach(card => {
     card.addEventListener("click", () => {
         card.classList.add('flip-item');
     })
+    // Check two matching cards
     card.addEventListener("click", () => {
         const flipItems = document.querySelectorAll('.flip-item');
         if (flipItems.length === 2) {
@@ -32,29 +53,8 @@ cards.forEach(card => {
     })
 });
 
-
-// Shuffle Cards
-// Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
-function shuffleCards() {
-    cards.forEach(card => {
-        let randomCardOrder = Math.floor(Math.random() * 24);
-        card.style.order = randomCardOrder;
-    })
-}
-
-// Start Game
-function startGame() {
-    shuffleCards();
-}
-
-// Restart/reset game and play again
-function resetGame() {
-    shuffleCards();
-}
-
+// Ending game when timer is up
+// function endGame() {}
 
 // Timer in the game function
 // function startGameTimer() {}
-
-// Ending game when timer is up
-// function endGame() {}
