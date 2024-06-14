@@ -16,6 +16,26 @@ main {
     background-color: white;
 }
 
+/* Attractions page */
+
+.main-attractions-container {
+    padding-top: 10px;
+}
+
+.attractions-type-div {
+    border: solid 1px black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 40%;
+}
+
+.attractions-button {
+    margin-bottom: 5px;
+}
+
 /* Food, hotels and transport page */
 
 .food-drinks-container {
