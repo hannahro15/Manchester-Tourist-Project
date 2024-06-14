@@ -12,8 +12,9 @@ resetButton.addEventListener("click", shuffleCards);
 // Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
 function shuffleCards() {
     cards.forEach(card => {
-        let randomCardOrder = Math.floor(Math.random() * cards.length);
+        let randomCardOrder = Math.floor(Math.random() * 24);
         card.style.order = randomCardOrder;
+        card.classList.remove('flip-item', 'matched-cards');
     })
 }
 
@@ -22,9 +23,9 @@ function startGame() {
     shuffleCards();
 }
 
-// Restart/reset game and play again
+// Reset Game
 function resetGame() {
-    shuffleCards();
+    shuffledCards();
 }
 
 // Flip Card
@@ -54,6 +55,12 @@ cards.forEach(card => {
 });
 
 // Function to end game 
+function endGame() {
+    // Reset to original game state with the cards turned back over again
+    setTimeout(() => {
+        resetGame();
+    }, 1000);
+};
 
 // Timer in the game function
 // function startGameTimer() {}
