@@ -66,3 +66,13 @@
 <img src='assets/wireframes/contact-page-laptop.png' alt='Contact Page Laptop'> 
 </details>
 
+## User Stories
+
+* As a user, it should be clear what the purpose of the website is about and what information it contains.
+* As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links.
+* As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links.
+* As a user, I expect the memory game to be fully functional so I can enjoy playing the game.
+* As a user, on the contact page I expect to be able to fill out and submit the form easily.
+* As a user, I expect to be directed to the correct social links which are found in the footer.
+* As a user, I expect the website to be response on different screen sizes.
+* As a user, I expect everything on the website to behave as expected on different browsers.
