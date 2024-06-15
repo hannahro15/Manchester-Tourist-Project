@@ -14,6 +14,7 @@ function shuffleCards() {
     cards.forEach(card => {
         let randomCardOrder = Math.floor(Math.random() * 24);
         card.style.order = randomCardOrder;
+        // Unflip all cards when both the startGame and resetGame buttons are clicked the same time as shuffling
         card.classList.remove('flip-item', 'matched-cards');
     })
 }
@@ -25,34 +26,38 @@ function startGame() {
 
 // Reset Game
 function resetGame() {
-    shuffledCards();
+    shuffleCards();
 }
 
 // Flip Card
 cards.forEach(card => {
     card.addEventListener("click", () => {
         card.classList.add('flip-item');
-    })
-    // Check two matching cards
-    card.addEventListener("click", () => {
-        const flipItems = document.querySelectorAll('.flip-item');
-        if (flipItems.length === 2) {
-            const firstCard = flipItems[0];
-            const secondCard = flipItems[1];
-            // Matched card
-            if (firstCard.dataset.name === secondCard.dataset.name) {
-                firstCard.classList.add('matched-cards');
-                secondCard.classList.add('matched-cards');
-            }
-            //Unflip not matching cards
-            setTimeout(() => {
-                flipItems.forEach(card => {
-                    card.classList.remove('flip-item');
-                });
-            }, 500);
-        }
+        // Invoke the matching cards function - (please see below for function)
+        checkMatchingCards();
     })
 });
+
+// Check matching cards
+function checkMatchingCards() {
+    const flippedCards = document.querySelectorAll('.flip-item');
+
+    if (flippedCards.length === 2) {
+        const [firstCard, secondCard] = flippedCards;
+
+        // Match cards comparison
+        if (firstCard.dataset.name === secondCard.dataset.name) {
+            firstCard.classList.add('matched-cards');
+            secondCard.classList.add('matched-cards');
+        }
+        // Unflip non-matching cards after a short delay
+        setTimeout(() => {
+            flippedCards.forEach(card => {
+                card.classList.remove('flip-item');
+            });
+        }, 500);
+    }
+}
 
 // Function to end game 
 function endGame() {
