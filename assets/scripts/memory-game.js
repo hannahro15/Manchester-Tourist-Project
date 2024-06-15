@@ -5,7 +5,10 @@ const cards = document.querySelectorAll(".card-item")
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
 
-startButton.addEventListener("click", shuffleCards);
+startButton.addEventListener("click", function () {
+    shuffleCards();
+    startGameTimer();
+});
 resetButton.addEventListener("click", shuffleCards);
 
 // Shuffle Cards
@@ -22,16 +25,20 @@ function shuffleCards() {
 // Start Game
 function startGame() {
     shuffleCards();
+    startGameTimer();
 }
+
+
 
 // Reset Game
 function resetGame() {
     shuffleCards();
 }
 
-// Flip Card
+// Game structure
 cards.forEach(card => {
     card.addEventListener("click", () => {
+        // Flip Item
         card.classList.add('flip-item');
         // Invoke the matching cards function - (please see below for function)
         checkMatchingCards();
@@ -67,5 +74,4 @@ function endGame() {
     }, 1000);
 };
 
-// Timer in the game function
-// function startGameTimer() {}
+endGame();

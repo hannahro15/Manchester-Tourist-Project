@@ -10,6 +10,11 @@ main {
     padding: 15px;
 }
 
+p {
+    font-style: italic;
+    font-family: sans-serif;
+}
+
 /* Navbar */
 
 .active {
