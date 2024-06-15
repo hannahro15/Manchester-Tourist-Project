@@ -35,11 +35,11 @@ p {
 
 .attractions-type-div {
     border: solid 1px black;
-    padding: 5px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
+    padding: 20px;
     width: 40%;
 }
 
@@ -63,10 +63,8 @@ p {
 .hotels-transport-div {
     background-color: white;
     border: solid 1px black;
-    padding: 5px;
     border-radius: 10px;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
     width: 40%;
 }
@@ -212,5 +210,20 @@ i {
 @media screen and (min-width: 768px) {
     .game-container {
         margin: 5% 20%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .h2 {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    button {
+        margin-bottom: 10px;
     }
 }
