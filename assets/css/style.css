@@ -16,6 +16,12 @@ main {
     background-color: white;
 }
 
+/* Hidden class */
+
+.hidden {
+    display: none;
+}
+
 /* Attractions page */
 
 .main-attractions-container {
@@ -44,7 +50,6 @@ main {
 
 .food-drinks-container,
 .hotels-transport-container {
-    display: flex;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -53,7 +58,9 @@ main {
 .hotels-transport-div {
     background-color: white;
     border: solid 1px black;
+    padding: 5px;
     border-radius: 10px;
+    text-align: center;
     padding: 10px;
     margin: 5px;
     width: 40%;
@@ -70,13 +77,6 @@ main {
 .food-drinks-button,
 .hotels-transport-button {
     border-radius: 10px;
-}
-
-
-/*  Hide and show functionality */
-
-.hidden {
-    display: none;
 }
 
 /* Contact Form */
@@ -145,8 +145,7 @@ img {
 
 .card-front,
 .card-item.flip-item .inner-card,
-.card-item.matched-cards .inner-card,
-.card-item.unflip-item {
+.card-item.matched-cards .inner-card {
     transform: rotateY(180deg);
 }
 
