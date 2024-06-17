@@ -37,7 +37,7 @@ function startGameTimer() {
     let timer;
     let seconds = 90;
     timer = setInterval(() => {
-        gameTimer.innerHTML = seconds;
+        gameTimer.innerHTML = "You have " + seconds + " seconds remaining!";
         seconds--;
         if (seconds <= 0) {
             clearInterval(timer);
