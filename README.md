@@ -1,5 +1,17 @@
 # Manchester Tourist Website
 
+This website is a tourist guide for tourists visiting Manchester. 
+
+The website contains five pages. Here is the list of the pages below:
+ * Home page
+ * Attractions page
+ * Food and drink, hotels and transport page
+ * A Manchester themed memory game (for a bit of fun!)
+ * Contact page
+
+Please see the live link below of the project.
+https://hannahro15.github.io/Manchester-Tourist-Project/
+
 # UX
 ## Wireframes
 
@@ -76,6 +88,66 @@
 * As a user, I expect to be directed to the correct social links which are found in the footer.
 * As a user, I expect the website to be response on different screen sizes.
 * As a user, I expect everything on the website to behave as expected on different browsers.
+
+## Technologies used
+
+* HTML
+* CSS
+* Bootstrap 5.3
+* Vanilla Javascript
+
+## Credits
+
+### General
+
+* [Canva](https://www.canva.com/) - or creating and designing the logo
+
+* [Balsamiq](https://balsamiq.com/wireframes/) - for creating the wireframes
+
+* [Gitpod](https://www.gitpod.io/) - For working/completing on my project
+
+* [Github](https://github.com/) - To store my project online
+
+* [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - For the relevant documentation
+
+* [W3 schools](https://www.w3schools.com/) - For general documentation
+
+* [Rgb color code website](https://rgbcolorcode.com/) - For choosing colours
+
+* [Readme Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) - For markdown documentation for the ReadMe
+
+* [ChatGPT](https://openai.com/index/chatgpt/) - For general debugging and re-factoring of code, as well as using Google Chrome dev tools as well.
+
+### Images
+
+* [Icons-8](https://icons8.com/) - For the icons used in the memory game
+
+* [Pixabay - home page image](https://pixabay.com/photos/buildings-tram-rails-skyscrapers-7759041/) - Home page Image from Pixabay
+
+* [Pexels - back of memory cards image](https://www.pexels.com/photo/photo-of-building-in-chetham-manchester-11856438/) - The back of the card images on the memory game from Pexels
+
+* [Font Awesome](https://fontawesome.com/icons) - For the icons used for the social links in the footer
+
+### Content/Documentation
+
+* [W3schools - flipping cards on memory game](https://www.w3schools.com/howto/howto_css_flip_card.asp) - For general structure and initial flipping of cards and modified and customised
+
+* [Martina Ferreira tutorial of memory game](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/) - For the general idea of how the memory game works, and in particular used the shuffling function from here and modified and customised it for my own game
+
+* All content about Manchester on the website was written myself from my knowledge of living in Manchester for many years.
+
+### Testing
+
+* [HTML validator](https://validator.w3.org/) - For validating my HTML code
+
+* [CSS validator](https://jigsaw.w3.org/css-validator/) - For validating my CSS code
+
+* [JS Hint](https://jshint.com/) - For validating my Javascript code
+
+* [Page speed Insights/Lighthouse](https://pagespeed.web.dev/) - For testing performance, accessibility, best practices and SEO on all pages I used a website called Page Speed Insights
+
+* [Am I responsive](https://ui.dev/amiresponsive) - For testing responsiveness and also for taking screenshots of the different pages on the website.
+
 
 ## Deployment
 
