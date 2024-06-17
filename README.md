@@ -96,6 +96,17 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 * Bootstrap 5.3
 * Vanilla Javascript
 
+## Features
+
+## Testing
+
+### Bugs
+- Game over/completing game pop-ups appearing at the end of memory game before matching all cards when 2 seconds left in timer. 
+- Game over pop-up appearing as well as the congratulatory message appearing one after each other at the end of a game.
+- 3rd card in a row can still be clicked when trying to match 2 cards that don't work, but it is sort of ok when the unflipping happens after a short length of time for unmatches as setTimeout has a short time.
+- Responsiveness issue of memory card game not working on larger screens.
+- Card-back image on memory not aligning centrally in each card-item container.
+
 ## Credits
 
 ### General
@@ -116,7 +127,7 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 
 * [Readme Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) - For markdown documentation for the ReadMe
 
-* [ChatGPT](https://openai.com/index/chatgpt/) - For general debugging and re-factoring of code, as well as using Google Chrome dev tools as well.
+* [ChatGPT](https://openai.com/index/chatgpt/) - For general debugging and re-factoring of code, as well as using Google Chrome dev tools.
 
 ### Images
 
