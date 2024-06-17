@@ -4,13 +4,17 @@
 const cards = document.querySelectorAll(".card-item")
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
+const gameTimer = document.getElementById("game-timer");
 
 startButton.addEventListener("click", function () {
     shuffleCards();
     startGameTimer();
 });
-resetButton.addEventListener("click", shuffleCards);
 
+resetButton.addEventListener("click", function () {
+    shuffleCards();
+    startGameTimer();
+});
 // Shuffle Cards
 // Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
 function shuffleCards() {
@@ -29,7 +33,18 @@ function startGame() {
 }
 
 
-
+function startGameTimer() {
+    let timer;
+    let seconds = 90;
+    timer = setInterval(() => {
+        gameTimer.innerHTML = seconds;
+        seconds--;
+        if (seconds <= 0) {
+            clearInterval(timer);
+            alert("Game Over");
+        }
+    }, 1000);
+}
 // Reset Game
 function resetGame() {
     shuffleCards();
@@ -57,6 +72,7 @@ function checkMatchingCards() {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
         }
+
         // Unflip non-matching cards after a short delay
         setTimeout(() => {
             flippedCards.forEach(card => {
@@ -65,7 +81,6 @@ function checkMatchingCards() {
         }, 500);
     }
 }
-
 // Function to end game 
 function endGame() {
     // Reset to original game state with the cards turned back over again

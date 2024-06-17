@@ -111,7 +111,7 @@ textarea {
 .game-container {
     display: flex;
     text-align: center;
-    margin: 5%;
+    margin-bottom: 5%;
     align-items: center;
 }
 
@@ -151,6 +151,20 @@ img {
 .card-item.matched-cards .inner-card {
     transform: rotateY(180deg);
 }
+
+#game-timer {
+    display: flex;
+}
+
+#game-timer span {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#content {
+    opacity: 0;
+}
+
 
 /* Footer */
 
@@ -209,7 +223,7 @@ i {
 
 @media screen and (min-width: 768px) {
     .game-container {
-        margin: 5% 20%;
+        margin: 5% 10%;
     }
 }
 
