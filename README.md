@@ -76,3 +76,31 @@
 * As a user, I expect to be directed to the correct social links which are found in the footer.
 * As a user, I expect the website to be response on different screen sizes.
 * As a user, I expect everything on the website to behave as expected on different browsers.
+
+## Deployment
+
+To fork/clone the project to your own computer: 
+
+* Fork the repository - https://github.com/hannahro15/Manchester-Tourist-Project
+
+* Click on the green code button.
+
+* Copy the url link.
+
+* Type git clone followed by the repository url link shown above in your terminal to add/clone it to your computer.
+
+Steps to deploy the website locally to GitHub Pages:
+
+* Go to settings in your repository.
+
+* On the side bar click on 'pages'.
+
+* Click on 'deploy from branch' under the source tab.
+
+* Under the branch tab below, select main branch (could be master instead), and to the right of it select where it says /root.
+
+* To the right of where the main/master branch were selected and '/root', and then click save.
+
+* The website is now deployed and this is the link to the deployed site which should be found in your repository - https://hannahro15.github.io/Manchester-Tourist-Project/
+
+
