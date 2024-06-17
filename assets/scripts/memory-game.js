@@ -5,15 +5,15 @@ const cards = document.querySelectorAll(".card-item")
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
 const gameTimer = document.getElementById("game-timer");
+let timer;
+let matchedCardsCount = 0;
 
 startButton.addEventListener("click", function () {
-    shuffleCards();
-    startGameTimer();
+    startGame();
 });
 
 resetButton.addEventListener("click", function () {
-    shuffleCards();
-    startGameTimer();
+    resetGame();
 });
 // Shuffle Cards
 // Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
@@ -28,14 +28,16 @@ function shuffleCards() {
 
 // Start Game
 function startGame() {
+    clearInterval(timer);
+    matchedCardsCount = 0;
     shuffleCards();
     startGameTimer();
 }
 
 
 function startGameTimer() {
-    let timer;
-    let seconds = 90;
+    let seconds = 120;
+    clearInterval(timer);
     timer = setInterval(() => {
         gameTimer.innerHTML = "You have " + seconds + " seconds remaining!";
         seconds--;
@@ -45,9 +47,13 @@ function startGameTimer() {
         }
     }, 1000);
 }
+
 // Reset Game
 function resetGame() {
+    clearInterval(timer);
+    matchedCardsCount = 0;
     shuffleCards();
+    startGameTimer();
 }
 
 // Game structure
@@ -63,6 +69,10 @@ cards.forEach(card => {
 // Check matching cards
 function checkMatchingCards() {
     const flippedCards = document.querySelectorAll('.flip-item');
+    const matchedCards = document.querySelectorAll(".matched-cards");
+
+    console.log("Flipped Cards:", flippedCards.length);
+    console.log("Matched Cards:", matchedCards.length);
 
     if (flippedCards.length === 2) {
         const [firstCard, secondCard] = flippedCards;
@@ -71,7 +81,9 @@ function checkMatchingCards() {
         if (firstCard.dataset.name === secondCard.dataset.name) {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
+            matchedCardsCount += 2;
         }
+
 
         // Unflip non-matching cards after a short delay
         setTimeout(() => {
@@ -80,13 +92,8 @@ function checkMatchingCards() {
             });
         }, 500);
     }
+    // Ending game with congratulations message!
+    if (matchedCardsCount === cards.length) {
+        alert("Congratulations for completing the Manchester Memory Game!");
+    }
 }
-// Function to end game 
-function endGame() {
-    // Reset to original game state with the cards turned back over again
-    setTimeout(() => {
-        resetGame();
-    }, 1000);
-};
-
-endGame();
