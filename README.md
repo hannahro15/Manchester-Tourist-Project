@@ -101,11 +101,15 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 ## Testing
 
 ### Bugs
-- Game over/completing game pop-ups appearing at the end of memory game before matching all cards when 2 seconds left in timer. 
-- Game over pop-up appearing as well as the congratulatory message appearing one after each other at the end of a game.
+### Fixed bugs 
+- Unflipping cards for non matches for more than one pair. 
+- Game over message appearing as well as the congratulatory message appearing one after each other at the end of a game.
+- Game over/completing game messages appearing at the end of memory game before matching all cards when 2 seconds left in timer. 
+### Unfixed Bugs
+- Responsiveness issue of memory game not working on larger screens.
+- Card-back image for cards on memory game are not aligning centrally in each card-item container.
 - 3rd card in a row can still be clicked when trying to match 2 cards that don't work, but it is sort of ok when the unflipping happens after a short length of time for unmatches as setTimeout has a short time.
-- Responsiveness issue of memory card game not working on larger screens.
-- Card-back image on memory not aligning centrally in each card-item container.
+
 
 ## Credits
 
