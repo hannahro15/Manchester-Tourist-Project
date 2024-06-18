@@ -1,6 +1,6 @@
 // Memory Game
 
-// Initialize classes annd ID's
+// Initialize classes and ID's
 const cards = document.querySelectorAll(".card-item")
 const startButton = document.getElementById('start-button')
 const resetButton = document.getElementById('reset-button')
@@ -15,6 +15,7 @@ startButton.addEventListener("click", function () {
 resetButton.addEventListener("click", function () {
     resetGame();
 });
+
 // Shuffle Cards
 // Shuffling code function taken from the Marina Ferreira tutorial https://youtu.be/NGtx3EBlpNE?feature=shared and customized to make it work for 24 cards.
 function shuffleCards() {
@@ -39,14 +40,16 @@ function startGameTimer() {
     let seconds = 120;
     clearInterval(timer);
     timer = setInterval(() => {
-        gameTimer.innerHTML = "You have " + seconds + " seconds remaining!";
-        seconds--;
-        if (seconds <= 0) {
+        if (seconds > 0) {
+            gameTimer.innerHTML = "You have " + seconds + " seconds remaining!";
+            seconds--;
+        } else {
             clearInterval(timer);
-            alert("Game Over");
+            gameTimer.innerHTML = "Game Over! Please click the reset button to try again!";
         }
     }, 1000);
 }
+
 
 // Reset Game
 function resetGame() {
@@ -83,8 +86,6 @@ function checkMatchingCards() {
             secondCard.classList.add('matched-cards');
             matchedCardsCount += 2;
         }
-
-
         // Unflip non-matching cards after a short delay
         setTimeout(() => {
             flippedCards.forEach(card => {
@@ -92,8 +93,10 @@ function checkMatchingCards() {
             });
         }, 500);
     }
-    // Ending game with congratulations message!
+
+    // To end game if successful
     if (matchedCardsCount === cards.length) {
-        alert("Congratulations for completing the Manchester Memory Game!");
+        clearInterval(timer);
+        gameTimer.innerHTML = "Congratulations for completing the Manchester Memory Game!";
     }
 }
