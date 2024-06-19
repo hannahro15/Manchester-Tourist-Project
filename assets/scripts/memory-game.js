@@ -41,11 +41,11 @@ function startGameTimer() {
     clearInterval(timer);
     timer = setInterval(() => {
         if (seconds > 0) {
-            gameTimer.innerHTML = "You have " + seconds + " seconds remaining!";
+            gameTimer.textContent = "You have " + seconds + " seconds remaining!";
             seconds--;
         } else {
             clearInterval(timer);
-            gameTimer.innerHTML = "Game Over! Please click the reset button to try again!";
+            gameTimer.textContent = "Game Over! Please click the reset button to try again!";
         }
     }, 1000);
 }
@@ -86,17 +86,19 @@ function checkMatchingCards() {
         if (firstCard.dataset.name === secondCard.dataset.name) {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
-            gameTimer.textContent = "Well done! You have correctly matched a pair!"
             matchedCardsCount += 2;
+            gameTimer.textContent = "Well done! You have correctly matched a pair!";
+            disableCards();
         }
         // Unflip non-matching cards after a short delay
         setTimeout(() => {
             flippedCards.forEach(card => {
                 card.classList.remove('flip-item');
             });
-            gameTimer.textContent = "I am sorry but this isn't a match. Please try again!"
-        }, 500);
+            gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
+        }, 600);
     }
+
 
     // To end game if successful
     if (matchedCardsCount === cards.length) {
