@@ -56,11 +56,15 @@ function resetGame() {
     startGame();
 }
 
+//Function to flip cards
+function flipCard(card) {
+    card.classList.add('flip-item');
+}
+
 // Game structure
 cards.forEach(card => {
     card.addEventListener("click", () => {
-        // Flip Item
-        card.classList.add('flip-item');
+        flipCard(card);
         // Invoke the matching cards function - (please see below for function)
         checkMatchingCards();
     })
@@ -68,6 +72,7 @@ cards.forEach(card => {
 
 // Check matching cards
 function checkMatchingCards() {
+
     const flippedCards = document.querySelectorAll('.flip-item');
     const matchedCards = document.querySelectorAll(".matched-cards");
 
