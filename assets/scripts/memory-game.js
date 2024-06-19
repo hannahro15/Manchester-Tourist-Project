@@ -84,6 +84,7 @@ function checkMatchingCards() {
         if (firstCard.dataset.name === secondCard.dataset.name) {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
+            gameTimer.textContent = "Well done! You have correctly matched a pair!"
             matchedCardsCount += 2;
         }
         // Unflip non-matching cards after a short delay
@@ -91,12 +92,13 @@ function checkMatchingCards() {
             flippedCards.forEach(card => {
                 card.classList.remove('flip-item');
             });
+            gameTimer.textContent = "I am sorry but this isn't a match. Please try again!"
         }, 500);
     }
 
     // To end game if successful
     if (matchedCardsCount === cards.length) {
         clearInterval(timer);
-        gameTimer.innerHTML = "Congratulations for completing the Manchester Memory Game!";
+        gameTimer.textContent = "Congratulations for completing the Manchester Memory Game!";
     }
 }
