@@ -1,9 +1,9 @@
 // Memory Game
 
 // Initialize classes and ID's
-const cards = document.querySelectorAll(".card-item")
-const startButton = document.getElementById('start-button')
-const resetButton = document.getElementById('reset-button')
+const cards = document.querySelectorAll(".card-item");
+const startButton = document.getElementById('start-button');
+const resetButton = document.getElementById('reset-button');
 const gameTimer = document.getElementById("game-timer");
 let timer;
 let matchedCardsCount = 0;
@@ -53,10 +53,7 @@ function startGameTimer() {
 
 // Reset Game
 function resetGame() {
-    clearInterval(timer);
-    matchedCardsCount = 0;
-    shuffleCards();
-    startGameTimer();
+    startGame();
 }
 
 // Game structure
