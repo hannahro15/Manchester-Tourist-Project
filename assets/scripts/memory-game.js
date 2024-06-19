@@ -38,8 +38,7 @@ function startGame() {
 
 function startGameTimer() {
     let seconds = 120;
-    clearInterval(timer);
-    timer = setInterval(() => {
+    timer = setTimeout(() => {
         if (seconds > 0) {
             gameTimer.textContent = "You have " + seconds + " seconds remaining!";
             seconds--;
@@ -77,7 +76,6 @@ function checkMatchingCards() {
     const matchedCards = document.querySelectorAll(".matched-cards");
 
     console.log("Flipped Cards:", flippedCards.length);
-    console.log("Matched Cards:", matchedCards.length);
 
     if (flippedCards.length === 2) {
         const [firstCard, secondCard] = flippedCards;
@@ -87,8 +85,9 @@ function checkMatchingCards() {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
             matchedCardsCount += 2;
+            console.log("Matched Cards:", matchedCards.length);
+
             gameTimer.textContent = "Well done! You have correctly matched a pair!";
-            disableCards();
         }
         // Unflip non-matching cards after a short delay
         setTimeout(() => {
