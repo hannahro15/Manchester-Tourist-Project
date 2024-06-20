@@ -23,7 +23,7 @@ function shuffleCards() {
         let randomCardOrder = Math.floor(Math.random() * 24);
         card.style.order = randomCardOrder;
         // Unflip all cards when both the startGame and resetGame buttons are clicked the same time as shuffling
-        card.classList.remove('flip-item', 'matched-cards');
+        card.classList.remove('flip-card', 'matched-cards');
     })
 }
 
@@ -57,7 +57,7 @@ function resetGame() {
 
 //Function to flip cards
 function flipCard(card) {
-    card.classList.add('flip-item');
+    card.classList.add('flip-card');
 }
 
 // Game structure
@@ -73,19 +73,19 @@ cards.forEach(card => {
 function unflipCards(cards) {
     setTimeout(() => {
         cards.forEach(card => {
-            card.classList.remove('flip-item');
+            card.classList.remove('flip-card');
         });
-        gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
+        if (!cards[0].classList.contains('matched-cards') || !cards[1].classList.contains('matched-cards')) {
+            gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
+            console.log(gameTimer.textContent);
+        }
     }, 600);
 }
 
 // Check matching cards
 function checkMatchingCards() {
 
-    const flippedCards = document.querySelectorAll('.flip-item');
-    const matchedCards = document.querySelectorAll(".matched-cards");
-
-    console.log("Flipped Cards:", flippedCards.length);
+    const flippedCards = document.querySelectorAll('.flip-card');
 
     if (flippedCards.length === 2) {
         const [firstCard, secondCard] = flippedCards;
@@ -94,10 +94,7 @@ function checkMatchingCards() {
         if (firstCard.dataset.name === secondCard.dataset.name) {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
-            matchedCardsCount += 2;
-
-            console.log("Matched Cards:", matchedCards.length);
-
+            matchedCardsCount++;
             gameTimer.textContent = "Well done! You have correctly matched a pair!";
         }
         /* Call the function of unflipping non-matching cards */
@@ -105,7 +102,7 @@ function checkMatchingCards() {
     }
 
     // To end game if successful
-    if (matchedCardsCount === cards.length) {
+    if (matchedCardsCount === cards.length / 2) {
         clearInterval(timer);
         gameTimer.textContent = "Congratulations for completing the Manchester Memory Game!";
     }
