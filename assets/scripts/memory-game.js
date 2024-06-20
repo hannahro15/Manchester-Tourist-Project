@@ -38,7 +38,7 @@ function startGame() {
 
 function startGameTimer() {
     let seconds = 120;
-    timer = setTimeout(() => {
+    timer = setInterval(() => {
         if (seconds > 0) {
             gameTimer.textContent = "You have " + seconds + " seconds remaining!";
             seconds--;
@@ -69,6 +69,16 @@ cards.forEach(card => {
     })
 });
 
+// Function to unflip non-matching cards
+function unflipCards(cards) {
+    setTimeout(() => {
+        cards.forEach(card => {
+            card.classList.remove('flip-item');
+        });
+        gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
+    }, 600);
+}
+
 // Check matching cards
 function checkMatchingCards() {
 
@@ -85,19 +95,14 @@ function checkMatchingCards() {
             firstCard.classList.add('matched-cards');
             secondCard.classList.add('matched-cards');
             matchedCardsCount += 2;
+
             console.log("Matched Cards:", matchedCards.length);
 
             gameTimer.textContent = "Well done! You have correctly matched a pair!";
         }
-        // Unflip non-matching cards after a short delay
-        setTimeout(() => {
-            flippedCards.forEach(card => {
-                card.classList.remove('flip-item');
-            });
-            gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
-        }, 600);
+        /* Call the function of unflipping non-matching cards */
+        unflipCards([firstCard, secondCard]);
     }
-
 
     // To end game if successful
     if (matchedCardsCount === cards.length) {
