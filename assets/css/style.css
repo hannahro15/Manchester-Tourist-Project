@@ -33,6 +33,10 @@ p {
     width: 100%;
 }
 
+#welcome {
+    padding-top: 10px;
+}
+
 /* Attractions page */
 
 .main-attractions-container {
