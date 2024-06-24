@@ -5,6 +5,9 @@ const cards = document.querySelectorAll(".card-item");
 const startButton = document.getElementById('start-button');
 const resetButton = document.getElementById('reset-button');
 const gameTimer = document.getElementById("game-timer");
+//const easylevel = document.getElementById("easy-level");
+//const mediumLevel = document.getElementById("medium-level");
+//const difficultLevel = document.getElementById("difficult-level");
 let timer;
 let matchedCardsCount = 0;
 
@@ -27,6 +30,13 @@ function shuffleCards() {
     })
 }
 
+//Lock game board before game starting
+//function lockgameBoard() {
+// firstCard.removeEventListener('click', flipCard);
+// secondCard.removeEventListener('click', flipCard);
+//}
+
+
 // Start Game
 function startGame() {
     clearInterval(timer);
@@ -38,6 +48,18 @@ function startGame() {
 
 function startGameTimer() {
     let seconds = 120;
+    // Set difficulty levels
+    //if (easyLevel) {
+    //  seconds = 120;
+    //  } else if (mediumLevel) {
+    // seconds = 90;
+    //   } else if (difficultLevel) {
+    //   seconds = 60;
+    // } else {
+    //   alert("This is not a level!");
+    //  return;
+    //  };
+
     timer = setInterval(() => {
         if (seconds > 0) {
             gameTimer.textContent = "You have " + seconds + " seconds remaining!";
@@ -77,7 +99,6 @@ function unflipCards(cards) {
         });
         if (!cards[0].classList.contains('matched-cards') || !cards[1].classList.contains('matched-cards')) {
             gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
-            console.log(gameTimer.textContent);
         }
     }, 600);
 }
