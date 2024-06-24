@@ -96,7 +96,49 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 * Bootstrap 5.3
 * Vanilla Javascript
 
+## Fonts and Colors
+
+For the fonts across the website I used a basic sans-serif font. In some of the containers and across the website I used an italic style text to ensure the text looked more visually appealing. 
+
+Regarding the color schemes, I chose to the colours of yellow, white, various shades of grey, and black. I wanted the colours across the website to reflect the colours of a bee which is the symbol of Manchester. I also didn't want the yellow to be too bright or too dark so everything was easily visible and the website could be more attractive.
+
 ## Features
+
+## Navigation Bar
+
+[Navigation Bar]()
+
+The navigation bar is a responsive navigation menu using Bootstrap. On smaller screens I used a hamburger menu for the various pages and for larger screens the links of the pages are listed at the top.
+
+### Home Page
+
+[Home Page]()
+
+The home page is a page introducing people to the what the website is about.
+
+### Attractions and Things to Do Page
+
+[Attractions Page]()
+
+This page is gives a lot of the main attractions and things to do around Manchester. The item with the links to the places are listed in a dropdown within various boxes/containers for different categories.
+
+### Food and Drink, Hotels and Transport Page
+
+[Food, Hotels and Transport Page]()
+
+The food, hotels, transport page consists of information about where to eat out, various bars, and also about where to stay such as hotels. it also gives an overview to the transport around Manchester.
+
+### The Manchester Memory Game
+
+[The Manchester Memory Game]()
+
+The main feature that uses Javascript in this website is a Manchester themed memory game. It consists of 24 pairs (12 separate icons) that reflect things to do with Manchester. There is timer of 120 seconds(2 minutes) whilst playing the game and has little messages each time you match a pair or don't match a pair. Also when the timer runs out a message pops up when you complete or don't complete the game.
+
+### Contact Page
+
+[Contact Page]()
+
+This page consists of a form that user fill out if they want to enquire about things in Manchester. As it has basic form validation, and also when you click the submit button it takes you on another page to the Code Institute Form Dump Processor page.
 
 ## Testing
 
@@ -112,11 +154,18 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 - 3rd card in a row can still be clicked when trying to match 2 cards that don't work, but it is sort of ok when the unflipping happens after a short length of time for unmatches as setTimeout has a short time.
 - Double-clicking on first click for the buttons on the attractions page, and the food-hotels-transport page too.
 
+### HTML/CSS/JS Validators
 
-## Testing
+I have run all the html and css pages through the html and css validators and I can confirm there are no errors. JS hint still to be done...
 
-I have run all the html and css pages through the html and css validators and I can confirm there are no errors.
-
+## Future Features
+ - For the memory game, add in three difficulty levels with countdown timers of varying lengths.
+ - For the memory game, add in options for different sizes of game boards.
+ - For the memory game, implement a scoring system place, and maybe with a leaderboard in.
+ - Add in a map of Manchester with or without markers somewhere on the website.
+ - Improve the form by making validation more specific such as having certain length passwords, regex for email addresses etc.
+ - Add in an animation of a bee that moves across one or more pages of the website. 
+ 
 ## Credits
 
 ### General
