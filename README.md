@@ -148,11 +148,12 @@ This page consists of a form that user fill out if they want to enquire about th
 - Game over message appearing as well as the congratulatory message appearing one after each other at the end of a game.
 - Game over/completion game messages appearing at the end of memory game before matching all cards when 2 seconds left in timer. 
 - Matching pair and non-matching pair messages alerting users when they match or don't match a pair sometimes both show up above the game board.
-### Unfixed Bugs
-- Responsiveness issue of memory game not working on larger screens.
+-  Double-clicking on first click for the buttons on the attractions page, and the food-hotels-transport page too. This was fixed by removing the if statement with the display none and block, and changing it to a classlist with the toggle function. 
 - Card-back image for cards on memory game are not aligning centrally in each card-item container.
-- 3rd card in a row can still be clicked when trying to match 2 cards that don't work, but it is sort of ok when the unflipping happens after a short length of time for unmatches as setTimeout has a short time.
-- Double-clicking on first click for the buttons on the attractions page, and the food-hotels-transport page too.
+### Unfixed Bugs
+- Responsiveness issue of memory game not working as expected on larger screens as it doesn't show as a proper square/rectangle.
+- 3rd card in a row can still be clicked when trying to match 2 cards that don't work. It is not a huge issue as the timings of the card flipping and unflipping seem to be work okay because of the the timings of 'setTimeout'.
+- Containers on attraction page, and the food-hotels-transport page, show blank space on a neighbouring container when opening up the current container. Could be an issue with some elements within the grid maybe.
 
 ### HTML/CSS/JS Validators
 
@@ -163,7 +164,7 @@ I have run all the html and css pages through the html and css validators and I 
  - For the memory game, add in options for different sizes of game boards.
  - For the memory game, implement a scoring system place, and maybe with a leaderboard in.
  - Add in a map of Manchester with or without markers somewhere on the website.
- - Improve the form by making validation more specific such as having certain length passwords, regex for email addresses etc.
+ - Improve the form by making validation more specific such as in Javascipt rather than in Bootstrap, like maybe having certain length passwords, regex for email addresses etc.
  - Add in an animation of a bee that moves across one or more pages of the website. 
  
 ## Credits
