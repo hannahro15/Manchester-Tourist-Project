@@ -50,7 +50,6 @@ p {
     text-align: center;
     margin: 5px;
     padding: 20px;
-    width: 40%;
 }
 
 .attractions-button {
@@ -117,6 +116,10 @@ textarea {
 
 
 /* Memory Game */
+
+#button-container {
+    display: block;
+}
 
 .game-container {
     display: flex;
@@ -225,6 +228,10 @@ i {
 @media screen and (min-width: 480px) {
     .game-container {
         margin: 5% 10%;
+    }
+
+    .attractions-type-div {
+        width: 40%;
     }
 }
 
