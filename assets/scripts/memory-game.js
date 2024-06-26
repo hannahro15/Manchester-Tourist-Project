@@ -40,9 +40,21 @@ function shuffleCards() {
 // Start Game
 function startGame() {
     clearInterval(timer);
-    matchedCardsCount = 0;
     shuffleCards();
+    matchedCardsCount = 0;
     startGameTimer();
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            flipCard(card);
+            // Invoke the matching cards function - (please see below for function)
+            checkMatchingCards();
+        });
+    });
+}
+
+//Function to flip cards
+function flipCard(card) {
+    card.classList.add("flip-card");
 }
 
 
@@ -76,20 +88,6 @@ function startGameTimer() {
 function resetGame() {
     startGame();
 }
-
-//Function to flip cards
-function flipCard(card) {
-    card.classList.add("flip-card");
-}
-
-// Game structure
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        flipCard(card);
-        // Invoke the matching cards function - (please see below for function)
-        checkMatchingCards();
-    });
-});
 
 // Function to unflip non-matching cards
 function unflipCards(cards) {
