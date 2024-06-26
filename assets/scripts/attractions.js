@@ -4,10 +4,6 @@ let attractionsDivs = document.getElementsByClassName("attractions-container")
 
 for (let i = 0; i < attractionsButtons.length; i++) {
     attractionsButtons[i].addEventListener('click', function () {
-        if (attractionsDivs[i].style.display === "none") {
-            attractionsDivs[i].style.display = "block";
-        } else {
-            attractionsDivs[i].style.display = "none";
-        }
-    })
-}
+        attractionsDivs[i].classList.toggle('hidden');
+    });
+};

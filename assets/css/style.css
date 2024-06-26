@@ -21,12 +21,6 @@ p {
     background-color: lightgray;
 }
 
-/* Hidden class */
-
-.hidden {
-    display: none;
-}
-
 /* Home Page */
 
 #home-image {
@@ -38,6 +32,10 @@ p {
 }
 
 /* Attractions page */
+
+.hidden {
+    display: none;
+}
 
 .main-attractions-container {
     padding-top: 10px;

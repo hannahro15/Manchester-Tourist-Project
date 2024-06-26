@@ -4,11 +4,7 @@ let foodDrinksDivs = document.getElementsByClassName("food-drinks-container")
 
 for (let i = 0; i < foodDrinksButtons.length; i++) {
     foodDrinksButtons[i].addEventListener('click', function () {
-        if (foodDrinksDivs[i].style.display === "none") {
-            foodDrinksDivs[i].style.display = "block";
-        } else {
-            foodDrinksDivs[i].style.display = "none";
-        }
+        foodDrinksDivs[i].classList.toggle('hidden');
     })
 }
 
