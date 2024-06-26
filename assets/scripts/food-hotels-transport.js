@@ -14,10 +14,6 @@ let hotelsTransportDivs = document.getElementsByClassName("hotels-transport-cont
 
 for (let i = 0; i < hotelsTransportButtons.length; i++) {
     hotelsTransportButtons[i].addEventListener('click', function () {
-        if (hotelsTransportDivs[i].style.display === "none") {
-            hotelsTransportDivs[i].style.display = "block";
-        } else {
-            hotelsTransportDivs[i].style.display = "none";
-        }
+        hotelsTransportDivs[i].classList.toggle('hidden');
     })
 }
