@@ -75,7 +75,6 @@ p {
     border-radius: 10px;
     padding: 20px;
     margin: 5px;
-    width: 40%;
 }
 
 .restaurant-type-div h3 {
@@ -231,6 +230,11 @@ i {
     }
 
     .attractions-type-div {
+        width: 40%;
+    }
+
+    .restaurant-type-div,
+    .hotels-transport-div {
         width: 40%;
     }
 }
