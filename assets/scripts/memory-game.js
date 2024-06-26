@@ -2,8 +2,8 @@
 
 // Initialize classes and ID's
 const cards = document.querySelectorAll(".card-item");
-const startButton = document.getElementById('start-button');
-const resetButton = document.getElementById('reset-button');
+const startButton = document.getElementById("start-button");
+const resetButton = document.getElementById("reset-button");
 const gameTimer = document.getElementById("game-timer");
 //const easylevel = document.getElementById("easy-level");
 //const mediumLevel = document.getElementById("medium-level");
@@ -26,8 +26,8 @@ function shuffleCards() {
         let randomCardOrder = Math.floor(Math.random() * 24);
         card.style.order = randomCardOrder;
         // Unflip all cards when both the startGame and resetGame buttons are clicked the same time as shuffling
-        card.classList.remove('flip-card', 'matched-cards');
-    })
+        card.classList.remove("flip-card", "matched-cards");
+    });
 }
 
 //Lock game board before game starting
@@ -79,7 +79,7 @@ function resetGame() {
 
 //Function to flip cards
 function flipCard(card) {
-    card.classList.add('flip-card');
+    card.classList.add("flip-card");
 }
 
 // Game structure
@@ -88,16 +88,16 @@ cards.forEach(card => {
         flipCard(card);
         // Invoke the matching cards function - (please see below for function)
         checkMatchingCards();
-    })
+    });
 });
 
 // Function to unflip non-matching cards
 function unflipCards(cards) {
     setTimeout(() => {
         cards.forEach(card => {
-            card.classList.remove('flip-card');
+            card.classList.remove("flip-card");
         });
-        if (!cards[0].classList.contains('matched-cards') || !cards[1].classList.contains('matched-cards')) {
+        if (!cards[0].classList.contains("matched-cards") || !cards[1].classList.contains("matched-cards")) {
             gameTimer.textContent = "I am sorry but this isn't a match. Please try again!";
         }
     }, 600);
@@ -106,19 +106,19 @@ function unflipCards(cards) {
 // Check matching cards
 function checkMatchingCards() {
 
-    const flippedCards = document.querySelectorAll('.flip-card');
+    const flippedCards = document.querySelectorAll(".flip-card");
 
     if (flippedCards.length === 2) {
         const [firstCard, secondCard] = flippedCards;
 
         // Match cards comparison
         if (firstCard.dataset.name === secondCard.dataset.name) {
-            firstCard.classList.add('matched-cards');
-            secondCard.classList.add('matched-cards');
+            firstCard.classList.add("matched-cards");
+            secondCard.classList.add("matched-cards");
             matchedCardsCount++;
             gameTimer.textContent = "Well done! You have correctly matched a pair!";
         }
-        /* Call the function of unflipping non-matching cards */
+        // Call the function of unflipping non-matching cards //
         unflipCards([firstCard, secondCard]);
     }
 
