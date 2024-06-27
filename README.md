@@ -81,12 +81,12 @@ https://hannahro15.github.io/Manchester-Tourist-Project/
 ## User Stories
 
 * As a user, it should be clear what the purpose of the website is about and what information it contains.
-* As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links.
-* As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links.
+* As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links to the places.
+* As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links to the places.
 * As a user, I expect the memory game to be fully functional so I can enjoy playing the game.
-* As a user, on the contact page I expect to be able to fill out and submit the form easily.
-* As a user, I expect to be directed to the correct social links which are found in the footer.
-* As a user, I expect the website to be response on different screen sizes.
+* As a user, on the contact page I expect to be able to fill out and submit the form easily and for it to take me to the Code Institute Dump Form Processor page on another tab.
+* As a user, I expect to be directed to the correct social links on another page which are found in the footer.
+* As a user, I expect the website to be responsive on different screen sizes.
 * As a user, I expect everything on the website to behave as expected on different browsers.
 
 ## Technologies used
@@ -154,10 +154,40 @@ This page consists of a form that user fill out if they want to enquire about th
 - Responsiveness issue of memory game not working as expected on larger screens as it doesn't show as a proper square/rectangle.
 - 3rd card in a row can still be clicked when trying to match 2 cards that don't work. It is not a huge issue as the timings of the card flipping and unflipping seem to be work okay because of the the timings of 'setTimeout'.
 - Containers on attraction page, and the food-hotels-transport page, show blank space on a neighbouring container when opening up the current container. Could be an issue with some elements within the grid maybe.
+- Some images with low resolution across the website. I changed the image on the home page and it still has low resolution.
 
 ### HTML/CSS/JS Validators
 
 I have run all the html and css pages through the html and css validators and I can confirm there are no errors. JS hint still to be done...
+
+### Difference between Manual Testing and Automated Testing
+#### Manual Testing
+Manual testing is used to check responsiveness on the website and browsers, and to check that everything functions as expected on the website.  It can also be used for behavior-driven development which is checking everything works as you are working through the project bit by bit, which is the approach that I used on this project.
+
+#### Automated Testing
+Automated testing can be used by a testing framework written in code called Jest. It can be used to check the Javascript functions and other code are working as expected.
+
+### Manual Testing
+
+#### Testing User Stories
+
+| User Story | Does this behave as expected? |
+| --- | --- |
+| As a user, it should be clear what the purpose of the website is about and what information it contains. | Yes |
+| As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links to the places. | |
+| As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links to the places | |
+ As a user, I expect the memory game to be fully functional so I can enjoy playing the game. | |
+| As a user, on the contact page I expect to be able to fill out and submit the form easily and for it to take me to the Code Institute Dump Form Processor page on another tab. | |
+| As a user, I expect to be directed to the correct social links on another page which are found in the footer. | |
+| As a user, I expect the website to be responsive on different screen sizes. | |
+| As a user, I expect everything on the website to behave as expected on different browsers. | |
+
+#### Browser Testing
+
+| Browser | Everything behaves as expected? |
+| --- | --- |
+| Google Chrome | |
+| Safari | |
 
 ## Future Features
  - For the memory game, add in three difficulty levels with countdown timers of varying lengths.
@@ -187,13 +217,13 @@ I have run all the html and css pages through the html and css validators and I 
 
 * [Readme Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) - For markdown documentation for the ReadMe
 
-* [ChatGPT](https://openai.com/index/chatgpt/) - For general debugging and re-factoring of code, as well as using Google Chrome dev tools.
+* [ChatGPT](https://openai.com/index/chatgpt/) - For general debugging, finding errors, and re-factoring of code. I used Google Chrome Dev tools as well for debugging.
 
 ### Images
 
 * [Icons-8](https://icons8.com/) - For the icons used in the memory game
 
-* [Pixabay - home page image](https://pixabay.com/photos/buildings-tram-rails-skyscrapers-7759041/) - Home page Image from Pixabay
+* [Unsplash - home page image](https://unsplash.com/photos/people-walking-on-sidewalk-near-brown-concrete-building-during-daytime-kQ7u8Kgkzlo) - Home page Image from Unplash
 
 * [Pexels - back of memory cards image](https://www.pexels.com/photo/photo-of-building-in-chetham-manchester-11856438/) - The back of the card images on the memory game from Pexels
 
