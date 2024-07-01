@@ -118,13 +118,6 @@ textarea {
     display: block;
 }
 
-.game-container {
-    display: flex;
-    text-align: center;
-    margin-bottom: 5%;
-    align-items: center;
-}
-
 .card-item {
     width: 80px;
     height: 80px;
@@ -222,11 +215,15 @@ i {
 
 /* Media queries */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
     .game-container {
-        margin: 5% 10%;
+        padding: 20px 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+}
 
+@media screen and (min-width: 480px) {
     .attractions-type-div {
         width: 40%;
     }
@@ -239,7 +236,9 @@ i {
 
 @media screen and (min-width: 768px) {
     .game-container {
-        margin: 5% 10%;
+        padding: 20px 50px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
@@ -255,5 +254,13 @@ i {
 
     button {
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .game-container {
+        padding: 20px 80px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
