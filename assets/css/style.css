@@ -213,6 +213,27 @@ i {
     color: white;
 }
 
+/* 404 Page */
+
+#error-page-div {
+    margin-top: 80px;
+}
+
+#error-message {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#redirect-message {
+    font-size: 20px;
+}
+
+#redirect-button a {
+    color: white;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 375px) {
