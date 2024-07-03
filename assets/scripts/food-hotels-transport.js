@@ -1,4 +1,4 @@
-// Add in dropdown toggle function for buttons for the food and drinks sections //
+// Add in dropdown toggle function for buttons for the food and drinks sections 
 let foodDrinksButtons = document.getElementsByClassName("food-drinks-button");
 let foodDrinksDivs = document.getElementsByClassName("food-drinks-container");
 
@@ -8,7 +8,7 @@ for (let i = 0; i < foodDrinksButtons.length; i++) {
     });
 }
 
-// Add in dropdown toggle function for buttons for hotels and transport sections //
+// Add in dropdown toggle function for buttons for hotels and transport sections
 let hotelsTransportButtons = document.getElementsByClassName("hotels-transport-button");
 let hotelsTransportDivs = document.getElementsByClassName("hotels-transport-container");
 

@@ -1,4 +1,4 @@
-// Add in dropdown toggle for buttons on attractions page //
+// Add in dropdown toggle for buttons on attractions page
 let attractionsButtons = document.getElementsByClassName("attractions-button");
 let attractionsDivs = document.getElementsByClassName("attractions-container");
 
