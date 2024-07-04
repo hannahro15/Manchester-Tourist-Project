@@ -49,7 +49,6 @@ p {
     border: solid 1px black;
     background-color: white;
     border-radius: 10px;
-    text-align: center;
     margin: 5px;
     padding: 20px;
 }
@@ -66,7 +65,6 @@ p {
 
 .food-drinks-container,
 .hotels-transport-container {
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -79,7 +77,12 @@ p {
     margin: 5px;
 }
 
-.restaurant-type-div h3 {
+.restaurant-type-div h3,
+.hotels-transport-div h3 {
+    padding-top: 20px;
+}
+
+#transport.div {
     padding-top: 20px;
 }
 
