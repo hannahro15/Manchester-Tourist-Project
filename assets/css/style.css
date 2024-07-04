@@ -21,6 +21,10 @@ p {
     background-color: grey;
 }
 
+.nav-link {
+    color: white;
+}
+
 /* Home Page */
 
 #home-image {
