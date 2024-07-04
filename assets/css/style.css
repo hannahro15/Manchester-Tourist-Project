@@ -18,7 +18,7 @@ p {
 /* Navbar */
 
 .active {
-    background-color: grey;
+    background-color: rgb(69, 69, 69);
 }
 
 .nav-link {
