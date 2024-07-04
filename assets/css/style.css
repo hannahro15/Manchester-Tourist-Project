@@ -88,35 +88,7 @@ p {
     border-radius: 10px;
 }
 
-/* Contact Form */
-
-label {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-label,
-input {
-    display: block;
-}
-
-input,
-textarea {
-    margin: 0 auto;
-    padding: 5px;
-    width: 80%;
-}
-
-.form-field {
-    padding: 5px;
-}
-
-
 /* Memory Game */
-
-#button-container {
-    display: block;
-}
 
 .card-item {
     width: 80px;
@@ -166,6 +138,30 @@ textarea {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+/* Contact Form */
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+label,
+input {
+    display: block;
+}
+
+input,
+textarea {
+    margin: 0 auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.form-field {
+    padding: 5px;
+}
+
 
 /* Footer */
 
@@ -236,11 +232,11 @@ i {
 
 /* Media queries */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 425px) {
     .game-container {
-        padding: 20px 30px;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding: 20px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -276,6 +272,10 @@ i {
     button {
         margin-bottom: 10px;
     }
+
+    .game-container {
+        padding-top: 10px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -283,5 +283,11 @@ i {
         padding: 20px 80px;
         margin-left: 80px;
         margin-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .game-container {
+        padding: 40px 80px;
     }
 }
