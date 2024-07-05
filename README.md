@@ -169,6 +169,46 @@ Automated testing can be used by a testing framework written in code called Jest
 
 ### Manual Testing
 
+### Lighthouse Testing
+I have been using Lighthouse/Page Speed Insights to test my web pages. Please see the final screenshots for the testing on all the pages. I have been correcting any small issues as they arose.
+
+#### Home Page/index.html - Mobile
+![Home Page - Mobile](assets/documentation/lighthouse-home-mob.png)
+
+#### Home Page/index.html - Desktop
+![Home Page - Desktop](assets/documentation/lighthouse-home-desktop.png)
+
+#### Attractions Page - Mobile
+![Attractions Page - Mobile](assets/documentation/lighthouse-attractions-mob.png)
+
+#### Attractions Page - Desktop
+![Attractions Page - Desktop](assets/documentation/lighthouse-attractions-desktop.png)
+
+#### Food, Hotels, and Transport Page - Mobile
+![Food, Hotels, and Transport Page - Mobile](assets/documentation/lighthouse-food-hotels-transport-mob.png)
+
+#### Food, Hotels, and Transport Page - Desktop
+![Food, Hotels, and Transport Page - Desktop](assets/documentation/lighthouse-food-hotels-transport-desktop.png)
+
+#### Memory Game Page - Mobile
+![Memory Game - Mobile](assets/documentation/lighthouse-memory-game-mob.png)
+
+#### Memory Game Page - Desktop
+![Memory Game- Desktop](assets/documentation/lighthouse-memory-game-desktop.png)
+
+#### Contact Page - Mobile
+![Contact Page - Mobile](assets/documentation/lighthouse-contact-mob.png)
+
+#### Contact Page - Desktop
+![Contact Page - Desktop](assets/documentation/lighthouse-contact-desktop.png)
+
+#### 404 Page - Mobile
+![404 Page - Mobile](assets/documentation/lighthouse-404-mob.png)
+
+#### 404 Page - Desktop
+![404 Page - Desktop](assets/documentation/lighthouse-404-desktop.png)
+
+
 #### Testing User Stories
 
 | User Story | Does this behave as expected? |
