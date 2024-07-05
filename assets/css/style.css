@@ -149,23 +149,12 @@ p {
 
 /* Contact Form */
 
-label {
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 40px;
-}
-
-label,
-input {
-    display: block;
-}
-
 input,
 textarea {
     margin: 0 auto;
     padding: 5px;
     width: 80%;
+    display: blovk;
 }
 
 .form-field {
@@ -267,10 +256,6 @@ i {
         margin-left: 50px;
         margin-right: 50px;
     }
-
-    label {
-        margin-left: 70px;
-    }
 }
 
 @media screen and (max-width: 425px) {
@@ -297,10 +282,6 @@ i {
         padding: 20px 80px;
         margin-left: 80px;
         margin-right: 80px;
-    }
-
-    label {
-        margin-left: 100px;
     }
 }
 
