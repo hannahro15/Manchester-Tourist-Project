@@ -225,8 +225,8 @@ i {
     font-size: 20px;
 }
 
-#redirect-button a {
-    color: white;
+#redirect-link {
+    color: black;
 }
 
 /* Media queries */
