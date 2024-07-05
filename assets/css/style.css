@@ -183,12 +183,12 @@ footer {
     display: block;
 }
 
-.logo img {
-    height: 5rem;
+.logo {
+    width: 80px;
+    height: auto;
     margin: 0 auto;
-    text-align: center;
     display: block;
-    padding-top: 5px;
+    padding: 10px;
 }
 
 
