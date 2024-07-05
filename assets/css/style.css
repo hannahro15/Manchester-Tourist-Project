@@ -111,10 +111,11 @@ p {
 }
 
 .card-front img {
-    width: 60px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 5px;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .card-back,
