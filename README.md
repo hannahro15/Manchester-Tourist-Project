@@ -160,7 +160,7 @@ This page consists of a form that user fill out if they want to enquire about th
 
 ### HTML/CSS/JS Validators
 
-I have run all the html and css pages through the html and css validators and I can confirm there are no errors. JS hint still to be done...
+I have run all the html and css pages through the html and css validators and I can confirm there are no errors. I have also done passed my code through the JS validator (JS Hint), and all the main errors have been sorted out, which were mainly to do with semi-colons.
 
 ### Difference between Manual Testing and Automated Testing
 
@@ -283,6 +283,8 @@ I have been using Lighthouse/Page Speed Insights to test my web pages. Please se
 * [Martina Ferreira tutorial of memory game](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/) - For the general idea of how the memory game works, and in particular used the shuffling function from here and modified and customised it for my own game.
 
 * [Game Timer](https://stackoverflow.com/questions/31559469/how-to-create-a-simple-javascript-timer) - For implementing the game timer with the countdown. This was customized for my project.
+
+* For sorting out the whitespace under the footer issue I used some of the code on [this webpage](https://www.30secondsofcode.org/css/s/footer-at-the-bottom/). The website is called the 30 seconds of code website and the page is about the footer being on the bottom.
 
 * All content about Manchester on the website was written myself from my knowledge of living in Manchester for many years.
 
