@@ -143,14 +143,16 @@ This page consists of a form that user fill out if they want to enquire about th
 ## Testing
 
 ### Bugs
-### Fixed bugs 
+
+#### Fixed bugs 
 - Unflipping cards for non matches for more than one pair. 
 - Game over message appearing as well as the congratulatory message appearing one after each other at the end of a game.
 - Game over/completion game messages appearing at the end of memory game before matching all cards when 2 seconds left in timer. 
 - Matching pair and non-matching pair messages alerting users when they match or don't match a pair sometimes both show up above the game board.
 -  Double-clicking on first click for the buttons on the attractions page, and the food-hotels-transport page too. This was fixed by removing the if statement with the display none and block, and changing it to a classlist with the toggle function. 
 - Card-back image for cards on memory game are not aligning centrally in each card-item container.
-### Unfixed Bugs
+
+#### Unfixed Bugs
 - Responsiveness issue of memory game not working as expected on larger screens as it doesn't show as a proper square/rectangle.
 - 3rd card in a row can still be clicked when trying to match 2 cards that don't work. It is not a huge issue as the timings of the card flipping and unflipping seem to be work okay because of the the timings of 'setTimeout'.
 - Containers on attraction page, and the food-hotels-transport page, show blank space on a neighbouring container when opening up the current container. Could be an issue with some elements within the grid maybe.
@@ -161,15 +163,16 @@ This page consists of a form that user fill out if they want to enquire about th
 I have run all the html and css pages through the html and css validators and I can confirm there are no errors. JS hint still to be done...
 
 ### Difference between Manual Testing and Automated Testing
+
 #### Manual Testing
-Manual testing is used to check responsiveness on the website and browsers, and to check that everything functions as expected on the website.  It can also be used for behavior-driven development which is checking everything works as you are working through the project bit by bit, which is the approach that I used on this project.
+Manual testing is used to check responsiveness on the website and browsers, and to check that everything functions as expected on the website.  It can also be used for behavior-driven development which is checking everything works as you are working through the project bit by bit, which is the approach that I used on this project. Manual testing is also used for checking that the points made in the user stories are implemented and for checking the overall functionality of the website. Also it is for checking that the whole website/application looks and works the way you expect and for testing the user experience (such as if links and buttons work) on the website/application itself, rather than testing behind the scenes in the actual code itself.
 
 #### Automated Testing
-Automated testing can be used by a testing framework written in code called Jest. It can be used to check the Javascript functions and other code are working as expected.
+Automated testing can be used by various testing frameworks such as Jest, Selenium, Jasmine, or Cypress. There are other teesting frameworks out there too but lesser known. Automated testing can be used to check Javascript functions and to check code is working as expected. The way automated testing works is that you write a piece of test code and you expect it to fail, then you write a small bit of the code in the function itself to make the test pass, and then re-factor the code if necessary. This system is used a lot for automated testing and it is known as red-green-refactor. This process repeats for each test that you write. This process ensures that bugs are caught and prevented as you are developing and testing your application.
 
 ### Manual Testing
 
-### Lighthouse Testing
+#### Lighthouse Testing
 I have been using Lighthouse/Page Speed Insights to test my web pages. Please see the final screenshots for the testing on all the pages. I have been correcting any small issues as they arose.
 
 #### Home Page/index.html - Mobile
@@ -214,12 +217,12 @@ I have been using Lighthouse/Page Speed Insights to test my web pages. Please se
 | User Story | Does this behave as expected? |
 | --- | --- |
 | As a user, it should be clear what the purpose of the website is about and what information it contains. | Yes |
-| As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links to the places. | |
-| As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links to the places | |
- As a user, I expect the memory game to be fully functional so I can enjoy playing the game. | |
-| As a user, on the contact page I expect to be able to fill out and submit the form easily and for it to take me to the Code Institute Dump Form Processor page on another tab. | |
-| As a user, I expect to be directed to the correct social links on another page which are found in the footer. | |
-| As a user, I expect the website to be responsive on different screen sizes. | |
+| As a user, on the attractions and things to do page, when you click on the buttons it should show information on attractions and things to do, with the relevant links to the places. | Yes |
+| As a user, on the food and drinks, hotels and transport page, when you click on the buttons it should show information on eating and drinking out, hotels, and transport, with the relevant links to the places | Yes |
+ As a user, I expect the memory game to be fully functional so I can enjoy playing the game. | Yes |
+| As a user, on the contact page I expect to be able to fill out and submit the form easily and for it to take me to the Code Institute Dump Form Processor page on another tab. | Yes |
+| As a user, I expect to be directed to the correct social links on another page which are found in the footer. | Yes |
+| As a user, I expect the website to be responsive on different screen sizes. | Yes |
 | As a user, I expect everything on the website to behave as expected on different browsers. | |
 
 #### Browser Testing
@@ -269,11 +272,17 @@ I have been using Lighthouse/Page Speed Insights to test my web pages. Please se
 
 * [Font Awesome](https://fontawesome.com/icons) - For the icons used for the social links in the footer
 
+* [Tiny PNG](https://tinypng.com/) - For compressing images.
+
+* [Free Convert](https://www.freeconvert.com/webp-converter) - For converting images to webp.
+
 ### Content/Documentation
 
 * [W3schools - flipping cards on memory game](https://www.w3schools.com/howto/howto_css_flip_card.asp) - For general structure and initial flipping of cards and modified and customised
 
-* [Martina Ferreira tutorial of memory game](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/) - For the general idea of how the memory game works, and in particular used the shuffling function from here and modified and customised it for my own game
+* [Martina Ferreira tutorial of memory game](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/) - For the general idea of how the memory game works, and in particular used the shuffling function from here and modified and customised it for my own game.
+
+* [Game Timer](https://stackoverflow.com/questions/31559469/how-to-create-a-simple-javascript-timer) - For implementing the game timer with the countdown. This was customized for my project.
 
 * All content about Manchester on the website was written myself from my knowledge of living in Manchester for many years.
 
