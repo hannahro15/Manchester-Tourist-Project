@@ -8,6 +8,7 @@ The website contains five pages. Here is the list of the pages below:
  * Food and drink, hotels and transport page
  * A Manchester themed memory game (for a bit of fun!)
  * Contact page
+ * 404 page
 
 Please see the live link below of the project.
 https://hannahro15.github.io/Manchester-Tourist-Project/
