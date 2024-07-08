@@ -141,9 +141,18 @@ The main feature that uses Javascript in this website is a Manchester themed mem
 
 This page consists of a form that user fill out if they want to enquire about things in Manchester. As it has basic form validation, and also when you click the submit button it takes you on another page to the Code Institute Form Dump Processor page.
 
+#### 404 Page
+
 ![404 Page](assets/documentation/screenshot-404-page.png)
 
 This is the page for if there is an unknown url that it is directed to. It is kept very simple and has a link that users can click on to go back to the home page.
+
+#### Footer
+
+![Footer](assets/documentation/screenshot-footer.png)
+
+The footer contains some basic information with the social links, logo and copyright statement.
+
 
 ## Testing
 
