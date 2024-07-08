@@ -171,6 +171,7 @@ The footer contains some basic information with the social links, logo and copyr
 - 3rd card in a row can still be clicked when trying to match 2 cards that don't work. It is not a huge issue as the timings of the card flipping and unflipping seem to be work okay because of the the timings of 'setTimeout'.
 - Containers on attraction page, and the food-hotels-transport page, show blank space on a neighbouring container when opening up the current container. Could be an issue with some elements within the grid maybe.
 - Some images with low resolution across the website. I changed the image on the home page and it still has low resolution.
+- When opening up my website on Safari, on the contact page, all the form fields apart from the message one didn't show the border. Also on the phone number line, there was a dropdown arrow to the right on Safari. This wasn't entirely what I expected like it usually is on Google Chrome which is the usual browser that I use.
 
 ### HTML/CSS/JS Validators
 
@@ -237,14 +238,14 @@ I have been using Lighthouse/Page Speed Insights to test my web pages. Please se
 | As a user, on the contact page I expect to be able to fill out and submit the form easily and for it to take me to the Code Institute Dump Form Processor page on another tab. | Yes |
 | As a user, I expect to be directed to the correct social links on another page which are found in the footer. | Yes |
 | As a user, I expect the website to be responsive on different screen sizes. | Yes |
-| As a user, I expect everything on the website to behave as expected on different browsers. | |
+| As a user, I expect everything on the website to behave as expected on different browsers. | Yes |
 
 #### Browser Testing
 
 | Browser | Everything behaves as expected? |
 | --- | --- |
-| Google Chrome | |
-| Safari | |
+| Google Chrome | Yes |
+| Safari | Yes |
 
 ## Future Features
  - For the memory game, add in three difficulty levels with countdown timers of varying lengths.
