@@ -143,7 +143,7 @@ This page consists of a form that user fill out if they want to enquire about th
 
 ![404 Page](assets/documentation/screenshot-404-page.png)
 
-This is the page for if there is an unknown utl that it is directed to. It is kept very simple and has a link that users can click on to go back to the home page.
+This is the page for if there is an unknown url that it is directed to. It is kept very simple and has a link that users can click on to go back to the home page.
 
 ## Testing
 
