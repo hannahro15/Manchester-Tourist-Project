@@ -106,39 +106,44 @@ Regarding the color schemes, I chose to the colours of yellow, white, various sh
 
 ## Navigation Bar
 
-[Navigation Bar]()
+![Navbar - Mobile](assets/documentation/screenshot-navbar-mob.png)
+![Navbar - Desktop](assets/documentation/screenshot-navbar-desktop.png)
 
 The navigation bar is a responsive navigation menu using Bootstrap. On smaller screens I used a hamburger menu for the various pages and for larger screens the links of the pages are listed at the top.
 
 ### Home Page
 
-[Home Page]()
+![Home Page](assets/documentation/screenshot-home-page.png)
 
 The home page is a page introducing people to the what the website is about.
 
 ### Attractions and Things to Do Page
 
-[Attractions Page]()
+![Attractions Page](assets/documentation/screenshot-attractions-page.png)
 
 This page is gives a lot of the main attractions and things to do around Manchester. The item with the links to the places are listed in a dropdown within various boxes/containers for different categories.
 
 ### Food and Drink, Hotels and Transport Page
 
-[Food, Hotels and Transport Page]()
+![Food, Hotels and Transport Page](assets/documentation/screenshot-food-hotels-transport-page.png)
 
 The food, hotels, transport page consists of information about where to eat out, various bars, and also about where to stay such as hotels. it also gives an overview to the transport around Manchester.
 
 ### The Manchester Memory Game
 
-[The Manchester Memory Game]()
+![The Manchester Memory Game](assets/documentation/screenshot-memory-game-page.png)
 
 The main feature that uses Javascript in this website is a Manchester themed memory game. It consists of 24 pairs (12 separate icons) that reflect things to do with Manchester. There is timer of 120 seconds(2 minutes) whilst playing the game and has little messages each time you match a pair or don't match a pair. Also when the timer runs out a message pops up when you complete or don't complete the game.
 
 ### Contact Page
 
-[Contact Page]()
+![Contact Page](assets/documentation/screenshot-contact-page.png)
 
 This page consists of a form that user fill out if they want to enquire about things in Manchester. As it has basic form validation, and also when you click the submit button it takes you on another page to the Code Institute Form Dump Processor page.
+
+![404 Page](assets/documentation/screenshot-404-page.png)
+
+This is the page for if there is an unknown utl that it is directed to. It is kept very simple and has a link that users can click on to go back to the home page.
 
 ## Testing
 
